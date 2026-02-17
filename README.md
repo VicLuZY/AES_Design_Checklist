@@ -1,7 +1,5 @@
 # AES Design Checklist
 
-Static, Bloomberg-style checklist terminal. No backend, no login—pure HTML, CSS, and JavaScript.
-
 ## Features
 
 - **Templates**: Versioned JSON files in `data/templates/` (immutable per version).
