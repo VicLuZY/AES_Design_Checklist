@@ -15,6 +15,7 @@
           <a href="#dashboard" class="tui-nav-item active" data-view="dashboard">[1] Dashboard</a>
           <a href="#templates" class="tui-nav-item" data-view="templates">[2] Templates</a>
           <a href="#projects" class="tui-nav-item" data-view="projects">[3] Projects</a>
+          <a href="#editor" class="tui-nav-item" data-view="editor">[4] Editor</a>
         </nav>
       </div>
       <div class="tui-header-bar">────────────────────────────────────────────────────────────────────────────</div>
@@ -99,7 +100,11 @@
         <div class="tui-checklist-bar">
           <button type="button" class="tui-btn tui-btn-back" id="btn-back-from-project">◀ Back</button>
           <span class="tui-checklist-title" id="project-detail-title"></span>
-          <span class="tui-checklist-progress" id="checklist-progress"></span>
+          <div class="tui-game-stats" id="checklist-game-stats">
+            <span class="game-level" id="game-level">Lv.1</span>
+            <span class="game-xp" id="game-xp">0 XP</span>
+            <span class="tui-checklist-progress" id="checklist-progress"></span>
+          </div>
           <div class="tui-checklist-actions">
             <button type="button" class="tui-btn tui-btn-alt" id="btn-upgrade-project" style="display:none;">Upgrade</button>
             <button type="button" class="tui-btn tui-btn-pri" id="btn-export-project">Export</button>
@@ -129,12 +134,46 @@
           <span class="tui-float-bar-text" id="float-bar-text">0 / 0 done</span>
         </div>
       </section>
+
+      <!-- Editor: load & modify templates, save as revision -->
+      <section id="view-editor" class="tui-view" aria-label="Template Editor">
+        <div class="tui-pane">
+          <div class="tui-pane-head">┌─ Template Editor ───────────────────────────────────────────────────────</div>
+          <div class="tui-pane-body">
+            <div class="tui-editor-toolbar">
+              <label>Template: <select id="editor-template-select" aria-label="Choose template"></select></label>
+              <label>Version: <select id="editor-version-select" aria-label="Choose version"></select></label>
+              <button type="button" class="tui-btn tui-btn-pri" id="editor-load-btn">Load</button>
+              <button type="button" class="tui-btn" id="editor-save-revision-btn" disabled>Save as revision</button>
+            </div>
+            <div class="tui-editor-tree" id="editor-tree"></div>
+          </div>
+          <div class="tui-pane-foot">└────────────────────────────────────────────────────────────────────────</div>
+        </div>
+        <div class="tui-modal" id="editor-save-modal" role="dialog" aria-labelledby="editor-save-title" aria-modal="true" hidden>
+          <div class="tui-modal-backdrop" id="editor-modal-backdrop"></div>
+          <div class="tui-modal-box">
+            <h2 id="editor-save-title" class="tui-modal-title">Save as revision</h2>
+            <p class="tui-modal-desc">Enter editor name and changelog. New version file will be downloaded; add it to <code>data/templates/</code> and update <code>index.json</code>.</p>
+            <div class="tui-modal-form">
+              <label>Editor name <input type="text" id="editor-name-input" required placeholder="Your name" /></label>
+              <label>Timestamp <input type="text" id="editor-timestamp-input" readonly /></label>
+              <label>Changelog <input type="text" id="editor-changelog-input" placeholder="e.g. Added section X" /></label>
+            </div>
+            <div class="tui-modal-actions">
+              <button type="button" class="tui-btn" id="editor-modal-cancel">Cancel</button>
+              <button type="button" class="tui-btn tui-btn-pri" id="editor-modal-download">Download new version</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="tui-footer">
       <span class="tui-footer-text">localStorage • no backend • export/import JSON</span>
     </footer>
     <div class="tui-status" id="status-line" role="status" aria-live="polite"></div>
+    <div class="game-toast" id="game-toast" aria-live="polite"></div>
   </div>
   <script src="js/storage.js"></script>
   <script src="js/templates.js"></script>

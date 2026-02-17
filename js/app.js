@@ -33,12 +33,19 @@
       document.getElementById('float-completion-bar').setAttribute('aria-hidden', 'true');
     } else if (viewId === 'project-detail') {
       document.getElementById('float-completion-bar').setAttribute('aria-hidden', 'false');
+    } else if (viewId === 'editor') {
+      renderEditor();
+      setStatusLine('Editor • Load a template, edit sections/items, Save as revision (name + timestamp)');
+      document.getElementById('float-completion-bar').setAttribute('aria-hidden', 'true');
     }
   }
 
   function getHashView() {
     const hash = (window.location.hash || '#dashboard').slice(1);
-    return hash === 'templates' ? 'templates' : hash === 'projects' ? 'projects' : 'dashboard';
+    if (hash === 'templates') return 'templates';
+    if (hash === 'projects') return 'projects';
+    if (hash === 'editor') return 'editor';
+    return 'dashboard';
   }
 
   window.addEventListener('hashchange', () => showView(getHashView()));
@@ -203,17 +210,62 @@
   let currentProjectId = null;
   let checklistFilter = { status: 'all', sectionId: '' };
 
+  function getLevelAndXP(project) {
+    const { total, done } = getApplicableCounts(project);
+    if (total === 0) return { level: 1, xp: 0, pct: 0 };
+    const pct = Math.round((done / total) * 100);
+    const level = pct >= 100 ? 5 : pct >= 75 ? 4 : pct >= 50 ? 3 : pct >= 25 ? 2 : 1;
+    const naSections = project.na_sections || [];
+    const sections = {};
+    (project.items || []).forEach((i) => {
+      if (i.na || naSections.indexOf(i.sectionId) !== -1) return;
+      sections[i.sectionId] = sections[i.sectionId] || { total: 0, done: 0 };
+      sections[i.sectionId].total++;
+      if (i.status === 'done') sections[i.sectionId].done++;
+    });
+    let xp = done * 10;
+    Object.keys(sections).forEach((sid) => {
+      const s = sections[sid];
+      if (s.total > 0 && s.done === s.total) xp += 50;
+    });
+    return { level: level, xp: xp, pct: pct };
+  }
+
+  function showToast(msg, type) {
+    const el = document.getElementById('game-toast');
+    if (!el) return;
+    el.textContent = msg;
+    el.className = 'game-toast game-toast-show' + (type ? ' game-toast-' + type : '');
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(() => {
+      el.className = 'game-toast';
+    }, 2500);
+  }
+
   function updateFloatBar(projectId) {
     const bar = document.getElementById('float-completion-bar');
     const fill = document.getElementById('float-bar-fill');
     const text = document.getElementById('float-bar-text');
     const project = getProjectById(projectId);
     if (!project || !project.items) return;
-    const total = project.items.length;
-    const done = project.items.filter((i) => i.status === 'done').length;
-    const pct = total ? Math.round((done / total) * 100) : 0;
+    const { total, done } = getApplicableCounts(project);
+    const { level, xp, pct } = getLevelAndXP(project);
     fill.style.width = pct + '%';
-    text.textContent = done + ' / ' + total + ' done';
+    const levelLabel = pct >= 100 ? 'Complete!' : 'Lv.' + level + ' • ' + pct + '%';
+    text.textContent = done + ' / ' + total + ' done • ' + levelLabel + ' • ' + xp + ' XP';
+  }
+
+  function updateGameStats(projectId) {
+    const project = getProjectById(projectId);
+    if (!project) return;
+    const { total, done } = getApplicableCounts(project);
+    const { level, xp, pct } = getLevelAndXP(project);
+    const levelEl = document.getElementById('game-level');
+    const xpEl = document.getElementById('game-xp');
+    const progEl = document.getElementById('checklist-progress');
+    if (levelEl) levelEl.textContent = pct >= 100 ? '★' : 'Lv.' + level;
+    if (xpEl) xpEl.textContent = xp + ' XP';
+    if (progEl) progEl.innerHTML = '<strong>' + done + '/' + total + '</strong> applicable';
   }
 
   function applyChecklistFilter() {
@@ -268,33 +320,45 @@
       return acc;
     }, {});
 
-    const totalItems = project.items ? project.items.length : 0;
-    const doneItems = project.items ? project.items.filter((i) => i.status === 'done').length : 0;
-    const progressEl = document.getElementById('checklist-progress');
-    if (progressEl) progressEl.innerHTML = '<strong>' + doneItems + '/' + totalItems + '</strong> done';
-    setStatusLine('Checklist • Filters: All / Flagged / Pending / Done • Section nav on the right');
+    const { total: totalApplicable, done: doneApplicable } = getApplicableCounts(project);
+    updateGameStats(projectId);
+    setStatusLine('Checklist • Mark items/sections N/A so they don\'t count • Level up as you complete!');
     updateFloatBar(projectId);
     document.getElementById('float-completion-bar').setAttribute('aria-hidden', 'false');
 
+    const naSections = project.na_sections || [];
     body.innerHTML = Object.entries(sections).map(([sectionId, items]) => {
+      const sectionNA = naSections.indexOf(sectionId) !== -1;
       const sectionTitle = (items[0] && items[0].sectionTitle) || sectionId;
-      const sectionDone = items.filter((i) => i.status === 'done').length;
-      const sectionTotal = items.length;
+      const secCounts = getSectionApplicableCounts(project, sectionId);
       return (
-        '<div class="tui-section" id="section-' + escapeHtml(sectionId) + '" data-section-id="' + escapeHtml(sectionId) + '">' +
+        '<div class="tui-section' + (sectionNA ? ' tui-section-na' : '') + '" id="section-' + escapeHtml(sectionId) + '" data-section-id="' + escapeHtml(sectionId) + '" data-section-na="' + (sectionNA ? 'true' : 'false') + '">' +
         '<div class="tui-section-head">' +
         '<span class="tui-section-title">' + escapeHtml(sectionTitle) + '</span>' +
-        '<span class="tui-section-progress">' + sectionDone + '/' + sectionTotal + '</span>' +
+        '<span class="tui-section-progress">' + secCounts.done + '/' + secCounts.total + '</span>' +
+        '<button type="button" class="tui-section-na-btn" data-section-na-btn="' + escapeHtml(sectionId) + '" title="Mark entire section N/A">' + (sectionNA ? 'Restore section' : 'N/A section') + '</button>' +
         '</div>' +
         items.map((item) => {
           const done = item.status === 'done';
           const flagged = !!item.flagged;
+          const na = !!item.na;
+          const hasDetails = !!(item.code_ref || item.article || item.comments || item.details);
+          const detailsHtml = hasDetails ? (
+            '<div class="tui-item-details" data-item-details>' +
+            (item.code_ref ? '<div class="tui-detail-row"><span class="tui-detail-label">Code:</span> ' + escapeHtml(item.code_ref) + '</div>' : '') +
+            (item.article ? '<div class="tui-detail-row"><span class="tui-detail-label">Article:</span> ' + escapeHtml(item.article) + '</div>' : '') +
+            (item.comments ? '<div class="tui-detail-row"><span class="tui-detail-label">Comments:</span> ' + escapeHtml(item.comments) + '</div>' : '') +
+            (item.details ? '<div class="tui-detail-row tui-detail-notes"><span class="tui-detail-label">Notes:</span> ' + escapeHtml(item.details) + '</div>' : '') +
+            '</div>'
+          ) : '';
           return (
-            '<div class="tui-item' + (done ? ' tui-item-done' : '') + (flagged ? ' tui-item-flagged' : '') + '" data-item-id="' + escapeHtml(item.id) + '" data-flagged="' + (flagged ? 'true' : 'false') + '" data-status="' + (done ? 'done' : 'pending') + '">' +
-            '<input type="checkbox" class="tui-item-check" ' + (done ? 'checked' : '') + ' data-item-check />' +
-            '<button type="button" class="tui-item-flag" data-item-flag title="Flag" aria-label="Toggle flag">' + (flagged ? '★' : '☆') + '</button>' +
-            '<div class="tui-item-text">' + escapeHtml(item.text) + '</div>' +
+            '<div class="tui-item' + (done ? ' tui-item-done' : '') + (flagged ? ' tui-item-flagged' : '') + (na ? ' tui-item-na' : '') + '" data-item-id="' + escapeHtml(item.id) + '" data-flagged="' + (flagged ? 'true' : 'false') + '" data-status="' + (done ? 'done' : 'pending') + '" data-na="' + (na ? 'true' : 'false') + '">' +
+            '<input type="checkbox" class="tui-item-check" ' + (done ? 'checked' : '') + ' data-item-check ' + (na ? 'disabled' : '') + ' />' +
+            '<button type="button" class="tui-item-flag" data-item-flag title="Flag">' + (flagged ? '★' : '☆') + '</button>' +
+            '<button type="button" class="tui-item-na-btn" data-item-na title="Not applicable">' + (na ? 'N/A' : '—') + '</button>' +
+            '<div class="tui-item-text' + (hasDetails ? ' tui-item-expandable' : '') + '" data-item-expand="' + (hasDetails ? 'true' : 'false') + '">' + (hasDetails ? '<span class="tui-expand-icon">▶</span> ' : '') + escapeHtml(item.text) + '</div>' +
             '<div class="tui-item-time">' + (item.updated_at ? formatDate(item.updated_at) : '') + '</div>' +
+            detailsHtml +
             '<div class="tui-item-notes"><textarea placeholder="Notes" data-item-notes>' + escapeHtml(item.notes || '') + '</textarea></div>' +
             '</div>'
           );
@@ -306,9 +370,9 @@
     const navList = document.getElementById('checklist-nav-list');
     navList.innerHTML = Object.entries(sections).map(([sectionId, items]) => {
       const sectionTitle = (items[0] && items[0].sectionTitle) || sectionId;
-      const sectionDone = items.filter((i) => i.status === 'done').length;
-      const sectionTotal = items.length;
-      return '<a class="tui-nav-link" href="#section-' + escapeHtml(sectionId) + '">' + escapeHtml(sectionTitle) + ' <span class="tui-nav-count">' + sectionDone + '/' + sectionTotal + '</span></a>';
+      const secCounts = getSectionApplicableCounts(project, sectionId);
+      const sectionNA = naSections.indexOf(sectionId) !== -1;
+      return '<a class="tui-nav-link' + (sectionNA ? ' tui-nav-link-na' : '') + '" href="#section-' + escapeHtml(sectionId) + '">' + escapeHtml(sectionTitle) + ' <span class="tui-nav-count">' + secCounts.done + '/' + secCounts.total + '</span></a>';
     }).join('');
 
     const sectionSelect = document.getElementById('filter-section');
@@ -383,6 +447,70 @@
         const item = this.closest('.tui-item');
         const itemId = item.getAttribute('data-item-id');
         updateProjectItem(projectId, itemId, { notes: this.value });
+      });
+    });
+
+    body.querySelectorAll('[data-item-expand="true"]').forEach((el) => {
+      el.addEventListener('click', function (e) {
+        if (e.target.closest('button') || e.target.closest('textarea')) return;
+        const item = this.closest('.tui-item');
+        const details = item.querySelector('[data-item-details]');
+        if (!details) return;
+        item.classList.toggle('tui-item-expanded');
+        const icon = this.querySelector('.tui-expand-icon');
+        if (icon) icon.textContent = item.classList.contains('tui-item-expanded') ? '▼' : '▶';
+      });
+    });
+
+    body.querySelectorAll('[data-section-na-btn]').forEach((btn) => {
+      btn.addEventListener('click', function () {
+        const sectionId = this.getAttribute('data-section-na-btn');
+        const project = getProjectById(projectId);
+        const isNA = isSectionNA(project, sectionId);
+        setSectionNA(projectId, sectionId, !isNA);
+        const section = document.getElementById('section-' + sectionId);
+        if (section) {
+          section.classList.toggle('tui-section-na', !isNA);
+          section.setAttribute('data-section-na', !isNA ? 'true' : 'false');
+        }
+        this.textContent = isNA ? 'N/A section' : 'Restore section';
+        const p = getProjectById(projectId);
+        navList.innerHTML = Object.entries(sections).map(([sid, items]) => {
+          const st = (items[0] && items[0].sectionTitle) || sid;
+          const sc = getSectionApplicableCounts(p, sid);
+          const sna = (p.na_sections || []).indexOf(sid) !== -1;
+          return '<a class="tui-nav-link' + (sna ? ' tui-nav-link-na' : '') + '" href="#section-' + escapeHtml(sid) + '">' + escapeHtml(st) + ' <span class="tui-nav-count">' + sc.done + '/' + sc.total + '</span></a>';
+        }).join('');
+        navList.querySelectorAll('.tui-nav-link').forEach((a) => {
+          a.addEventListener('click', (e) => { e.preventDefault(); const id = a.getAttribute('href').slice(1); const el = document.getElementById(id); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+        });
+        updateGameStats(projectId);
+        updateFloatBar(projectId);
+      });
+    });
+
+    body.querySelectorAll('[data-item-na]').forEach((btn) => {
+      btn.addEventListener('click', function () {
+        const item = this.closest('.tui-item');
+        const itemId = item.getAttribute('data-item-id');
+        const project = getProjectById(projectId);
+        const it = project.items.find((i) => i.id === itemId);
+        const next = !it.na;
+        updateProjectItem(projectId, itemId, { na: next });
+        item.classList.toggle('tui-item-na', next);
+        item.setAttribute('data-na', next ? 'true' : 'false');
+        item.querySelector('[data-item-check]').disabled = next;
+        this.textContent = next ? 'N/A' : '—';
+        const head = item.closest('.tui-section');
+        if (head) {
+          const secId = head.getAttribute('data-section-id');
+          const sc = getSectionApplicableCounts(getProjectById(projectId), secId);
+          const prog = head.querySelector('.tui-section-progress');
+          if (prog) prog.textContent = sc.done + '/' + sc.total;
+        }
+        updateGameStats(projectId);
+        updateFloatBar(projectId);
+        applyChecklistFilter();
       });
     });
   }
@@ -471,6 +599,184 @@
       return;
     }
     showView(getHashView());
+  }
+
+  // --- Editor: load template, edit, save as revision ---
+  let editorDraft = null;
+  let editorTemplateId = null;
+  let editorCurrentVersion = null;
+
+  function renderEditor() {
+    const tplSelect = document.getElementById('editor-template-select');
+    const verSelect = document.getElementById('editor-version-select');
+    const loadBtn = document.getElementById('editor-load-btn');
+    const saveBtn = document.getElementById('editor-save-revision-btn');
+    if (!tplSelect) return;
+    fetchTemplatesIndex().then((index) => {
+      tplSelect.innerHTML = '<option value="">— Select template —</option>' + index.map((t) => '<option value="' + escapeHtml(t.id) + '">' + escapeHtml(t.name) + '</option>').join('');
+      tplSelect.addEventListener('change', function () {
+        const id = this.value;
+        verSelect.innerHTML = '<option value="">—</option>';
+        editorDraft = null;
+        saveBtn.disabled = true;
+        if (!id) return;
+        const t = index.find((x) => x.id === id);
+        if (t && t.versions && t.versions.length) {
+          verSelect.innerHTML = t.versions.map((v) => '<option value="' + escapeHtml(v.file) + '">' + escapeHtml(v.version) + '</option>').join('');
+        }
+      });
+      verSelect.addEventListener('change', function () { editorDraft = null; saveBtn.disabled = true; });
+    }).catch(() => { tplSelect.innerHTML = '<option value="">Failed to load index</option>'; });
+
+    loadBtn.addEventListener('click', async function () {
+      const tplId = tplSelect.value;
+      const file = verSelect.value;
+      if (!tplId || !file) { setStatusLine('Select template and version first.'); return; }
+      try {
+        const def = await fetchTemplateVersion(tplId, file);
+        editorDraft = JSON.parse(JSON.stringify(def));
+        editorTemplateId = tplId;
+        editorCurrentVersion = def.version || 'v1';
+        renderEditorTree();
+        saveBtn.disabled = false;
+        setStatusLine('Template loaded. Edit below, then Save as revision.');
+      } catch (e) {
+        setStatusLine('Load failed: ' + e.message);
+      }
+    });
+
+    saveBtn.addEventListener('click', function () {
+      if (!editorDraft) return;
+      const modal = document.getElementById('editor-save-modal');
+      document.getElementById('editor-name-input').value = '';
+      document.getElementById('editor-timestamp-input').value = new Date().toISOString().slice(0, 19).replace('T', ' ');
+      document.getElementById('editor-changelog-input').value = '';
+      modal.hidden = false;
+    });
+
+    document.getElementById('editor-modal-cancel').addEventListener('click', () => {
+      document.getElementById('editor-save-modal').hidden = true;
+    });
+    document.getElementById('editor-modal-backdrop').addEventListener('click', () => {
+      document.getElementById('editor-save-modal').hidden = true;
+    });
+    document.getElementById('editor-modal-download').addEventListener('click', function () {
+      const name = (document.getElementById('editor-name-input').value || '').trim();
+      const timestamp = (document.getElementById('editor-timestamp-input').value || '').trim();
+      const changelog = (document.getElementById('editor-changelog-input').value || '').trim();
+      if (!name) { setStatusLine('Enter editor name.'); return; }
+      const nextVer = nextVersionNumber(editorCurrentVersion);
+      const fileName = editorTemplateId + '.' + nextVer + '.json';
+      editorDraft.version = nextVer;
+      const blob = new Blob([JSON.stringify(editorDraft, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = fileName;
+      a.click();
+      URL.revokeObjectURL(a.href);
+      const indexEntry = '\n  {\n    "version": "' + nextVer + '",\n    "file": "' + fileName + '",\n    "published_at": "' + new Date().toISOString() + '",\n    "changelog": "By ' + name + (changelog ? ': ' + changelog : '') + '"\n  }';
+      setStatusLine('Downloaded ' + fileName + '. Add to data/templates/ and add this to the template\'s versions in index.json:' + indexEntry);
+      document.getElementById('editor-save-modal').hidden = true;
+    });
+  }
+
+  function nextVersionNumber(current) {
+    const m = (current || 'v1').match(/^v(\d+)$/i);
+    return 'v' + (m ? parseInt(m[1], 10) + 1 : 1);
+  }
+
+  function renderEditorTree() {
+    const tree = document.getElementById('editor-tree');
+    if (!tree || !editorDraft || !editorDraft.sections) return;
+    tree.innerHTML = editorDraft.sections.map((sec, sIdx) => (
+      '<div class="tui-editor-section" data-section-idx="' + sIdx + '">' +
+      '<div class="tui-editor-section-head">' +
+      '<input type="text" class="tui-editor-input" data-sec-title value="' + escapeHtml(sec.title || '') + '" placeholder="Section title" />' +
+      '<input type="text" class="tui-editor-input tui-editor-id" data-sec-id value="' + escapeHtml(sec.id || '') + '" placeholder="id" />' +
+      '<button type="button" class="tui-btn tui-editor-rm" data-remove-section title="Remove section">×</button>' +
+      '</div>' +
+      '<div class="tui-editor-items">' +
+      (sec.items || []).map((item, iIdx) => (
+        '<div class="tui-editor-item" data-item-idx="' + iIdx + '">' +
+        '<input type="text" class="tui-editor-input" data-item-text value="' + escapeHtml(item.text || '') + '" placeholder="Item text" />' +
+        '<input type="text" class="tui-editor-input tui-editor-small" data-item-code value="' + escapeHtml(item.code_ref || '') + '" placeholder="Code ref" />' +
+        '<input type="text" class="tui-editor-input tui-editor-small" data-item-details value="' + escapeHtml(item.details || item.comments || '') + '" placeholder="Details / notes" />' +
+        '<button type="button" class="tui-btn tui-editor-rm" data-remove-item title="Remove item">×</button>' +
+        '</div>'
+      )).join('') +
+      '</div>' +
+      '<button type="button" class="tui-btn tui-btn-alt tui-editor-add-item" data-add-item data-section-idx="' + sIdx + '">+ Item</button>' +
+      '</div>'
+    )).join('') +
+    '<button type="button" class="tui-btn tui-btn-pri" id="editor-add-section">+ Section</button>';
+
+    tree.querySelectorAll('[data-sec-title]').forEach((inp) => {
+      inp.addEventListener('change', function () {
+        const idx = parseInt(this.closest('[data-section-idx]').getAttribute('data-section-idx'), 10);
+        editorDraft.sections[idx].title = this.value;
+      });
+    });
+    tree.querySelectorAll('[data-sec-id]').forEach((inp) => {
+      inp.addEventListener('change', function () {
+        const idx = parseInt(this.closest('[data-section-idx]').getAttribute('data-section-idx'), 10);
+        editorDraft.sections[idx].id = this.value || editorDraft.sections[idx].id;
+      });
+    });
+    tree.querySelectorAll('[data-item-text]').forEach((inp) => {
+      inp.addEventListener('change', function () {
+        const sec = this.closest('[data-section-idx]');
+        const sIdx = parseInt(sec.getAttribute('data-section-idx'), 10);
+        const iIdx = parseInt(this.closest('[data-item-idx]').getAttribute('data-item-idx'), 10);
+        editorDraft.sections[sIdx].items[iIdx].text = this.value;
+      });
+    });
+    tree.querySelectorAll('[data-item-code]').forEach((inp) => {
+      inp.addEventListener('change', function () {
+        const sec = this.closest('[data-section-idx]');
+        const sIdx = parseInt(sec.getAttribute('data-section-idx'), 10);
+        const iIdx = parseInt(this.closest('[data-item-idx]').getAttribute('data-item-idx'), 10);
+        editorDraft.sections[sIdx].items[iIdx].code_ref = this.value || null;
+      });
+    });
+    tree.querySelectorAll('[data-item-details]').forEach((inp) => {
+      inp.addEventListener('change', function () {
+        const sec = this.closest('[data-section-idx]');
+        const sIdx = parseInt(sec.getAttribute('data-section-idx'), 10);
+        const iIdx = parseInt(this.closest('[data-item-idx]').getAttribute('data-item-idx'), 10);
+        editorDraft.sections[sIdx].items[iIdx].details = this.value || null;
+      });
+    });
+    tree.querySelectorAll('[data-remove-section]').forEach((btn) => {
+      btn.addEventListener('click', function () {
+        const idx = parseInt(this.closest('[data-section-idx]').getAttribute('data-section-idx'), 10);
+        editorDraft.sections.splice(idx, 1);
+        renderEditorTree();
+      });
+    });
+    tree.querySelectorAll('[data-remove-item]').forEach((btn) => {
+      btn.addEventListener('click', function () {
+        const sec = this.closest('[data-section-idx]');
+        const sIdx = parseInt(sec.getAttribute('data-section-idx'), 10);
+        const iIdx = parseInt(this.closest('[data-item-idx]').getAttribute('data-item-idx'), 10);
+        editorDraft.sections[sIdx].items.splice(iIdx, 1);
+        renderEditorTree();
+      });
+    });
+    tree.querySelectorAll('[data-add-item]').forEach((btn) => {
+      btn.addEventListener('click', function () {
+        const sIdx = parseInt(this.getAttribute('data-section-idx'), 10);
+        const sec = editorDraft.sections[sIdx];
+        const newId = 'item-' + sIdx + '-' + (sec.items.length + 1);
+        sec.items = sec.items || [];
+        sec.items.push({ id: newId, text: '', type: 'checkbox' });
+        renderEditorTree();
+      });
+    });
+    document.getElementById('editor-add-section').addEventListener('click', function () {
+      const newId = 'sec-' + (editorDraft.sections.length + 1);
+      editorDraft.sections.push({ id: newId, title: 'New section', items: [] });
+      renderEditorTree();
+    });
   }
 
   window.addEventListener('hashchange', checkHash);

@@ -42,7 +42,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Municipalities often require EV-ready or EV-capable parking and may allow load management (EVEMS). Checking local parking and zoning bylaws early ensures the electrical design can accommodate these requirements; the link in the item lists BC policy examples."
         },
         {
           "id": "item-1-2",
@@ -58,7 +59,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Confirming heating, cooling, and domestic hot water approach (gas vs. electric; distributed vs. centralized) with the mechanical consultant ensures load calculations and service sizing are based on the correct assumptions."
         },
         {
           "id": "item-1-3",
@@ -74,7 +76,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Confirming fire pump requirements with the mechanical consultant ensures the electrical design allows for the correct supply, controls, and standby power per code."
         },
         {
           "id": "item-1-4",
@@ -90,7 +93,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Identifying specialty loads (kitchens, IT, processing, etc.) at a high level allows them to be included in preliminary load calculations and avoids under-sizing the service."
         },
         {
           "id": "item-1-5",
@@ -106,7 +110,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Locking in potential CRU tenant types and allocating loads for shell spaces (e.g. kitchen, data centre, food stores) ensures the base building electrical capacity is adequate."
         },
         {
           "id": "item-1-6",
@@ -122,7 +127,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Preliminary load calculations establish the required service size and type (voltage, number of feeds). Completing them early allows the utility application to proceed and avoids delays."
         },
         {
           "id": "item-1-7",
@@ -138,7 +144,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Generator load calculations determine standby capacity for life safety and optional loads. Complete them so that generator sizing and transfer schemes are correct."
         },
         {
           "id": "item-1-8",
@@ -154,7 +161,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Dwelling unit transformer calculations size the transformers that feed residential units. Completing them ensures compliance and avoids over- or under-sizing."
         },
         {
           "id": "item-1-9",
@@ -170,7 +178,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "A lightning protection analysis per CSA B72 determines whether a system is required and how it should be designed. Complete this so that the design meets the standard."
         },
         {
           "id": "item-1-10",
@@ -186,7 +195,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Rezoning or development permit comments often change building program or layout. Review architectural drawings for changes and update the load calculation if the changes affect loads."
         },
         {
           "id": "item-1-11",
@@ -202,7 +212,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Ensure all electrical rooms, shafts, and other provisions identified at schematic design are still shown on the current architectural drawings so that the design can be developed correctly."
         },
         {
           "id": "item-1-12",
@@ -218,7 +229,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "The mechanical consultant’s motor list drives a significant portion of the electrical load. Obtain it and update the load calculation so that service and distribution are accurately sized."
         },
         {
           "id": "item-1-13",
@@ -234,7 +246,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Locking in client decisions on CRU tenant types, amenity uses, and client equipment avoids late load changes and ensures the load calculation reflects the final design intent."
         },
         {
           "id": "item-1-14",
@@ -250,7 +263,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Including load calculations on the drawings and having major equipment load calcs peer reviewed ensures accuracy and provides a clear record for permit and construction."
         }
       ]
     },
@@ -272,7 +286,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Clearances from the building to utility lines must meet code (e.g. CEC Table 33). Consider additional clearance so that construction workers remain outside limits of approach per WorkSafe BC. Refer to CEC 2021, Article Table 33."
         },
         {
           "id": "item-2-16",
@@ -288,7 +303,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Clearances from the building to utility pole transformers must meet code (e.g. CEC 26-012). Verify distances so that safety and utility access are maintained. Refer to CEC 2021, Article 26-012(1)."
         },
         {
           "id": "item-2-17",
@@ -304,7 +320,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Reviewing the survey and land title confirms whether statutory rights-of-way for existing utilities affect the site. The owner typically provides these; the electrical design must respect ROWs."
         },
         {
           "id": "item-2-18",
@@ -320,7 +337,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "The ESI (service application) form, single-line diagram, and architectural plans are submitted to the utility to initiate the service design. Submit early to avoid delays."
         },
         {
           "id": "item-2-19",
@@ -336,7 +354,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HIGH VOLTAGE"
-          ]
+          ],
+          "details": "Vista switch (or similar utility-owned switching) requirements are set by the utility for high-voltage or complex services. Confirm so that the single-line diagram and specs are correct."
         },
         {
           "id": "item-2-20",
@@ -352,7 +371,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Confirm with the utility which street or frontage will supply power so that service entrance location and site layout can be coordinated."
         },
         {
           "id": "item-2-21",
@@ -368,7 +388,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Pad-, chamber-, or kiosk-mounted utility equipment must be located per utility requirements. Confirm locations so that site and civil drawings can be coordinated."
         },
         {
           "id": "item-2-22",
@@ -384,7 +405,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Utility rights-of-way must remain clear of other structures and services as required by the utility. Verify so that the design does not conflict with ROW conditions."
         },
         {
           "id": "item-2-23",
@@ -400,7 +422,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Locating service equipment as close as practicable to the service entrance minimizes conductor length and cost and aligns with code (e.g. CEC 6-206). Refer to CEC 2021, Article 6-206(c)."
         },
         {
           "id": "item-2-24",
@@ -416,7 +439,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Service equipment must be above flood elevation where required by code or authority. Verify elevation so that equipment is not at risk of flooding. Refer to CEC 2021, Article 6-206(c)(v)."
         },
         {
           "id": "item-2-25",
@@ -432,7 +456,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Access and location of utility service rooms and metering rooms must comply with utility requirements. Confirm so that layout and access are acceptable to the utility."
         },
         {
           "id": "item-2-26",
@@ -448,7 +473,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "The ESI (service application) form, single-line diagram, and architectural plans are submitted to the utility to initiate the service design. Submit early to avoid delays."
         },
         {
           "id": "item-2-27",
@@ -464,7 +490,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Revenue meter locations, clearances, meter bases, CT/PT compartments, conduit, sealing, and communications must conform to utility standards. Confirm details with the utility."
         },
         {
           "id": "item-2-28",
@@ -480,7 +507,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Confirm the size and number of incoming service ducts with the utility so that duct bank and service entrance design match utility expectations."
         },
         {
           "id": "item-2-29",
@@ -496,7 +524,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Sending the duct profile, site plan, and service room layout for utility review allows early feedback and avoids rework at contract documents."
         },
         {
           "id": "item-2-30",
@@ -512,7 +541,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "The ESI (service application) form, single-line diagram, and architectural plans are submitted to the utility to initiate the service design. Submit early to avoid delays."
         }
       ]
     },
@@ -536,7 +566,8 @@
             "NEW CONST.",
             "TI",
             "RENOVATION"
-          ]
+          ],
+          "details": "North arrows belong on plan views (e.g. floor plans, site) to orient the reader; they are not shown on schematics or detail sheets."
         },
         {
           "id": "item-3-32",
@@ -554,7 +585,8 @@
             "NEW CONST.",
             "TI",
             "RENOVATION"
-          ]
+          ],
+          "details": "Drawings should show current company logos and disclaimers without decorative frames, and reflect current AES office locations for consistency and liability."
         },
         {
           "id": "item-3-33",
@@ -572,7 +604,8 @@
             "NEW CONST.",
             "TI",
             "RENOVATION"
-          ]
+          ],
+          "details": "Room names and numbers help coordinate across disciplines and with the architect. Ensure they match the architectural drawing set."
         },
         {
           "id": "item-3-34",
@@ -590,7 +623,8 @@
             "NEW CONST.",
             "TI",
             "RENOVATION"
-          ]
+          ],
+          "details": "Drawing titles, subtitles, and discipline (e.g. Electrical) identify each sheet. Use a consistent format that matches the project’s drawing standards."
         },
         {
           "id": "item-3-35",
@@ -608,7 +642,8 @@
             "NEW CONST.",
             "TI",
             "RENOVATION"
-          ]
+          ],
+          "details": "Notes must be specific to the project and coordinated with the design. Avoid generic notes that do not apply or conflict with the design."
         },
         {
           "id": "item-3-36",
@@ -626,7 +661,8 @@
             "NEW CONST.",
             "TI",
             "RENOVATION"
-          ]
+          ],
+          "details": "Scale bars should be plot-independent where possible, and the original sheet size should be marked so that scaling is clear when sheets are printed or referenced."
         },
         {
           "id": "item-3-37",
@@ -644,7 +680,8 @@
             "NEW CONST.",
             "TI",
             "RENOVATION"
-          ]
+          ],
+          "details": "The electrical title block and sheet size should match the architectural set so that the combined drawing package is consistent."
         },
         {
           "id": "item-3-38",
@@ -662,7 +699,8 @@
             "NEW CONST.",
             "TI",
             "RENOVATION"
-          ]
+          ],
+          "details": "Use the same drawing numbering format as the architect so that cross-references and sheet order are consistent across the package."
         }
       ]
     },
@@ -686,7 +724,8 @@
             "NEW CONST.",
             "TI",
             "RENOVATION"
-          ]
+          ],
+          "details": "The symbol schedule must list every symbol used on the drawings and must match the symbols actually shown so that readers can interpret the drawings correctly."
         },
         {
           "id": "item-4-40",
@@ -704,7 +743,8 @@
             "NEW CONST.",
             "TI",
             "RENOVATION"
-          ]
+          ],
+          "details": "The drawing list must include every sheet in the set and match the actual drawings so that the package is complete and easy to navigate."
         },
         {
           "id": "item-4-41",
@@ -722,7 +762,8 @@
             "NEW CONST.",
             "TI",
             "RENOVATION"
-          ]
+          ],
+          "details": "Include the required energy code compliance statement so that the drawings clearly state how the design meets the energy code."
         },
         {
           "id": "item-4-42",
@@ -739,7 +780,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "RENOVATION"
-          ]
+          ],
+          "details": "Where a code consultant’s report or alternate solutions apply, the drawings should include a statement of compliance so that the authority and contractors see the link to the report."
         }
       ]
     },
@@ -761,7 +803,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Show pad, chamber, and kiosk locations with dimensions and ROW areas so that site and civil coordination is clear."
         },
         {
           "id": "item-5-44",
@@ -777,7 +820,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Show duct routing to utility standards (size, quantity, bends, etc.) so that the duct bank can be built and accepted by the utility."
         },
         {
           "id": "item-5-45",
@@ -793,7 +837,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "T-drains at duct entries prevent water from following ducts into the building. Indicate them at all utility duct entries."
         },
         {
           "id": "item-5-46",
@@ -809,7 +854,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Sending the duct profile, site plan, and service room layout for utility review allows early feedback and avoids rework at contract documents."
         },
         {
           "id": "item-5-47",
@@ -824,7 +870,8 @@
             "BCBC 2024",
             "VBBL 2019",
             "NBC (AE) 2019"
-          ]
+          ],
+          "details": "Any portion of service ducts run inside the building is typically required to be concrete encased. Indicate this on the drawings. Refer to CEC 2021, Article 6-208(1)(a)."
         },
         {
           "id": "item-5-48",
@@ -840,7 +887,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HIGH VOLTAGE"
-          ]
+          ],
+          "details": "High-voltage ducts run inside the building should be shown as rigid galvanized steel (RGS) per code and utility requirements. Refer to CEC 2021, Article 36-100(2)."
         },
         {
           "id": "item-5-49",
@@ -856,7 +904,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Show the locations of the electrical and communications entrance facility rooms so that the architect and other disciplines can coordinate access and space."
         },
         {
           "id": "item-5-50",
@@ -873,7 +922,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "RENOVATION"
-          ]
+          ],
+          "details": "Show existing services that remain, are abandoned, or are relocated so that phasing and demolition are clear."
         },
         {
           "id": "item-5-51",
@@ -890,7 +940,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "RENOVATION"
-          ]
+          ],
+          "details": "Indicate phasing: which circuits are maintained, replaced, or relocated, and any temporary provisions, so that construction and shutdowns can be planned."
         },
         {
           "id": "item-5-52",
@@ -906,7 +957,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Show provisions for future expansion (spare conduits, capacity, spaces) so that future work can be done without major modifications."
         },
         {
           "id": "item-5-53",
@@ -922,7 +974,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Detail grounding for pads, chambers, and kiosks: connections to building rebar and exposed metal, and make details project-specific so that grounding is buildable."
         },
         {
           "id": "item-5-54",
@@ -938,7 +991,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Detail all duct bank sections (depth, spacing, pull boxes, manholes, lighting and signage ducts) so that civil and electrical construction are coordinated."
         },
         {
           "id": "item-5-55",
@@ -954,7 +1008,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Where required, indicate concrete encasement of duct banks so that civil scope and structural implications are clear."
         },
         {
           "id": "item-5-56",
@@ -970,7 +1025,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Pull boxes ease cable installation on long or multi-bend runs. Show them where needed and confirm that their use is acceptable to the utility."
         },
         {
           "id": "item-5-57",
@@ -986,7 +1042,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "In cold regions, show engine block heater receptacles and specify IPLC or similar energy controls so that vehicle heating does not unnecessarily increase demand."
         },
         {
           "id": "item-5-58",
@@ -1002,7 +1059,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Show EVSE locations and any load management (EVEMS) so that the design meets municipal and energy code requirements and is buildable."
         },
         {
           "id": "item-5-59",
@@ -1018,7 +1076,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Indicate power for building signage so that the architect and signage contractor have a clear scope and location."
         },
         {
           "id": "item-5-60",
@@ -1034,7 +1093,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Detail the light pole base (anchor bolts, concrete, access) so that structural and civil coordination is complete."
         },
         {
           "id": "item-5-61",
@@ -1050,7 +1110,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Detail bollard bases for lighting or EVSE so that foundations and mounting are buildable."
         },
         {
           "id": "item-5-62",
@@ -1066,7 +1127,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Detail the parking gate or kiosk pedestal base so that structural and electrical scope are clear."
         },
         {
           "id": "item-5-63",
@@ -1082,7 +1144,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Detail weatherproof enclosures for exterior devices on this and other sheets so that equipment is suitable for the environment."
         },
         {
           "id": "item-5-64",
@@ -1098,7 +1161,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Coordinate device locations and phasing with mechanical, architectural, civil, and landscape so that there are no physical or phasing conflicts."
         }
       ]
     },
@@ -1119,7 +1183,8 @@
             "BCBC 2024",
             "VBBL 2019",
             "NBC (AE) 2019"
-          ]
+          ],
+          "details": "In mixed-use buildings, the client or utility may require separate common area meters per occupancy (e.g. commercial vs. residential). Confirm with the client so that metering matches the billing structure."
         },
         {
           "id": "item-6-66",
@@ -1135,7 +1200,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Revenue meter locations, clearances, meter bases, CT/PT compartments, conduit, sealing, and communications must conform to utility standards. Confirm details with the utility."
         },
         {
           "id": "item-6-67",
@@ -1152,7 +1218,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "RENOVATION"
-          ]
+          ],
+          "details": "Revenue meter locations, clearances, meter bases, CT/PT compartments, conduit, sealing, and communications must conform to utility standards. Confirm details with the utility."
         },
         {
           "id": "item-6-68",
@@ -1168,7 +1235,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Revenue meter locations, clearances, meter bases, CT/PT compartments, conduit, sealing, and communications must conform to utility standards. Confirm details with the utility."
         },
         {
           "id": "item-6-69",
@@ -1186,7 +1254,8 @@
             "NEW CONST.",
             "TI",
             "RENOVATION"
-          ]
+          ],
+          "details": "Information metering (non-revenue) may be required by the energy code or client. Show it on the single-line diagram where required."
         },
         {
           "id": "item-6-70",
@@ -1202,7 +1271,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Show the generator size (kW/kVA) on the single-line diagram so that the emergency system capacity is clear."
         },
         {
           "id": "item-6-71",
@@ -1218,7 +1288,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "A fully rated 100% load bank test breaker with accessible connection terminals allows testing of the generator at full load. Show it connected per manufacturer and code."
         },
         {
           "id": "item-6-72",
@@ -1234,7 +1305,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "The load bank breaker must be connected directly to the generator (not downstream of the main generator breaker) so that load bank testing is possible without backfeed issues. Refer to CSA C282-19, Article 8.7.2.(d)."
         },
         {
           "id": "item-6-73",
@@ -1250,7 +1322,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Use separate transfer switches for life safety vs. non-life-safety (or vital/delayed/conditional in healthcare) so that load priority and code requirements are met. Refer to CEC 2021, Article 46-108(5)."
         },
         {
           "id": "item-6-74",
@@ -1266,7 +1339,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "For outdoor generators, show a 208V single-phase connection for the integral panel that feeds coolant heaters, battery charger, and maintenance receptacles; confirm size with the manufacturer."
         },
         {
           "id": "item-6-75",
@@ -1282,7 +1356,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "With parallel generators, provide means to automatically reduce load on generator failure so that the remaining generator(s) can continue to supply emergency power (e.g. multiple transfer switches). Refer to CSA C282-19, Article 6.9.1."
         },
         {
           "id": "item-6-76",
@@ -1298,7 +1373,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "There must be no breakers or disconnects between the fire pump breaker and the service box (i.e. the FP breaker is not downstream of the main service breaker) so that fire pump supply is reliable. Refer to CEC 2021, Article 32-306(1)(a)."
         },
         {
           "id": "item-6-77",
@@ -1314,7 +1390,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "The fire pump emergency breaker must be connected directly to the emergency generator (not downstream of the main generator breaker) so that the fire pump has a dedicated emergency supply. Refer to CEC 2021, Article 32-306(6)."
         },
         {
           "id": "item-6-78",
@@ -1330,7 +1407,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "The fire pump uses its own ATS. The fire pump and ATS are typically supplied by the mechanical contractor; note this on the drawings. Refer to CEC 2021, Article 32-308."
         },
         {
           "id": "item-6-79",
@@ -1346,7 +1424,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Ground fault protection is required on solidly grounded systems at 2000 A and above (208 V) and 1000 A and above (600 V). Show GFP devices on the single-line diagram. Refer to CEC 2021, Article 14-102(1)."
         },
         {
           "id": "item-6-80",
@@ -1362,7 +1441,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Ungrounded or impedance-grounded systems require ground fault detection. Show detection means on the single-line diagram so that the system can be monitored. Refer to CEC 2021, Article 10-302\n10-400."
         },
         {
           "id": "item-6-81",
@@ -1378,7 +1458,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Neutrals must be grounded at a single point per system: typically at the service box, generator X0, transformer X0, or first tie. Verify so that parallel neutral paths and stray currents are avoided. Refer to CEC 2021, Article 10-210\n10-212."
         },
         {
           "id": "item-6-82",
@@ -1394,7 +1475,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Multi-source systems use either 3-wire distribution with 3-pole ATS or 4-wire with 4-pole ATS and main-tie-main (separately derived). Other 4-wire arrangements require care to avoid parallel neutral/ground paths and ground fault issues. Refer to CEC 2021, Article 10-212(1)(c)\nFigure B10-9."
         },
         {
           "id": "item-6-83",
@@ -1410,7 +1492,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Provide a grounding detail with the ground bus connected at the service box so that installation and inspection are clear."
         },
         {
           "id": "item-6-84",
@@ -1427,7 +1510,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show all breaker and fuse sizes (frame, trip, LI/LSI/LSIG, 100% ratings as required). LSI/LSIG are recommended for feeders over 400 A for better protection."
         },
         {
           "id": "item-6-85",
@@ -1443,7 +1527,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Fire pump breaker and conductor sizing must be correct (e.g. 600% FLA utility side, 300% FLA gen side); breakers must be labeled and lockable and must not trip before the breaker in the fire pump controller. Confirm with fire pump shop drawings. Refer to CEC 2021, Article 32-306."
         },
         {
           "id": "item-6-86",
@@ -1459,7 +1544,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Where required by code, specify selective coordination of protective devices so that a fault clears at the nearest device without upstream trips. Refer to CEC 2021, Article 24-302(4)\n38-062\n46-208\n58-306."
         },
         {
           "id": "item-6-87",
@@ -1476,7 +1562,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show all conduit, wire, and bus sizes; ensure conductor ampacity matches protective devices; indicate 3-wire vs. 4-wire and bonding conductors so that the installation is buildable and compliant."
         },
         {
           "id": "item-6-88",
@@ -1493,7 +1580,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "A neutral must be provided to all in-line meter bases 200 A and below, including those serving 3-phase 3-wire loads, per the BCH Secondary Metering Guide."
         },
         {
           "id": "item-6-89",
@@ -1510,7 +1598,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show interrupting capacity of overcurrent devices and provide an available fault current calculation so that equipment is applied within its rating; keep consistent with specs and panel schedules. Refer to CEC 2021, Article 14-012."
         },
         {
           "id": "item-6-90",
@@ -1527,7 +1616,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Where series-rated combinations are used, clearly identify them and specify permanent labels so that replacement and maintenance use the correct breakers. Refer to CEC 2021, Article 14-014."
         },
         {
           "id": "item-6-91",
@@ -1544,7 +1634,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show all equipment designations and locations, including LV relay panels and meter cabinets, so that the single-line diagram is a complete reference."
         },
         {
           "id": "item-6-92",
@@ -1561,7 +1652,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show power conditioning or surge protection where specified so that the design intent is clear."
         },
         {
           "id": "item-6-93",
@@ -1578,7 +1670,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show transformer kVA ratings on the single-line diagram so that distribution capacity is clear."
         },
         {
           "id": "item-6-94",
@@ -1595,7 +1688,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Where K-rated transformers are used (e.g. for nonlinear loads), indicate the K-rating so that the correct transformer is specified."
         },
         {
           "id": "item-6-95",
@@ -1612,7 +1706,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Indicate future spares or spaces so that panel and switchgear layout allow for expansion."
         },
         {
           "id": "item-6-96",
@@ -1628,7 +1723,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Show key interlocks and ensure the sequence of operations matches utility and design requirements so that paralleling and transfer are safe and correct."
         },
         {
           "id": "item-6-97",
@@ -1645,7 +1741,8 @@
             "NBC (AE) 2019",
             "HIGH BUILDING",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Specify the fire or circuit integrity rating of emergency conductors so that life safety circuits meet code for fire resistance. Refer to NBC 2020, Article 3.2.7.10."
         },
         {
           "id": "item-6-98",
@@ -1662,7 +1759,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Size wires and cables using 75 °C ampacity unless otherwise required so that ampacity is in accordance with the CEC. Refer to CEC 2021, Article 4-006\nTables 2 & 4."
         },
         {
           "id": "item-6-99",
@@ -1678,7 +1776,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Apply the required derating to underground conductors so that ampacity is correct for the installation conditions. Refer to CEC 2021, Article 4-004(d)\nTables D8 - D11B\nIEEE 835."
         }
       ]
     },
@@ -1700,7 +1799,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HIGH VOLTAGE"
-          ]
+          ],
+          "details": "HV equipment rooms should contain only HV-related equipment. Do not locate FACP, piping, mechanical, or communications equipment in the same room so that access and safety are maintained."
         },
         {
           "id": "item-7-101",
@@ -1716,7 +1816,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HIGH VOLTAGE"
-          ]
+          ],
+          "details": "Where possible, avoid locating HV equipment rooms below living space. If unavoidable, coordinate with the architect on acoustics and ensure drains do not run through the room."
         },
         {
           "id": "item-7-102",
@@ -1732,7 +1833,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Where possible, avoid locating generator rooms below living space. If unavoidable, coordinate with the architect on acoustics."
         },
         {
           "id": "item-7-103",
@@ -1748,7 +1850,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Coordinate generator fuel, exhaust, and ventilation with the architect and mechanical engineer so that code and manufacturer requirements are met."
         },
         {
           "id": "item-7-104",
@@ -1764,7 +1867,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Size generator fuel tanks per CSA C282, Z32, and NFPA 20. For fire pump applications, NFPA 20 Article 9.6.2.3 requires 8 hours of fuel. Refer to CSA C282-19."
         },
         {
           "id": "item-7-105",
@@ -1780,7 +1884,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Locate the generator room above flood elevation so that emergency power is available during flooding events. Refer to CSA C282-19."
         },
         {
           "id": "item-7-106",
@@ -1796,7 +1901,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "For healthcare facilities, CSA Z32 may require the generator to be within one storey of grade. Verify and comply so that fuel delivery and maintenance are feasible. Refer to CSA C282-19, Article 6.2.2."
         },
         {
           "id": "item-7-107",
@@ -1813,7 +1919,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Where required by municipal by-laws, locate sub-electrical and communication rooms above flood elevation."
         },
         {
           "id": "item-7-108",
@@ -1830,7 +1937,8 @@
             "NBC (AE) 2019",
             "HIGH VOLTAGE",
             "GENERATOR"
-          ]
+          ],
+          "details": "Consider how large equipment (unit subs, generators) will be replaced when locating service rooms so that access and rigging are possible."
         },
         {
           "id": "item-7-109",
@@ -1846,7 +1954,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Size electrical and communications rooms and send markups (locations, dimensions, fire ratings) to the architect for coordination so that space is adequate."
         },
         {
           "id": "item-7-110",
@@ -1862,7 +1971,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Plan routing of major electrical and communication feeders; mark up shafts and riser spaces and send to the architect so that vertical and horizontal runs are feasible."
         },
         {
           "id": "item-7-111",
@@ -1878,7 +1988,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "The generator room must be 2-hour fire rated and contain only equipment related to the emergency power supply system so that the emergency source is protected. Refer to NBC 2020, Article 3.6.2.8.(1)."
         },
         {
           "id": "item-7-112",
@@ -1894,7 +2005,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Maintain at least 1 m clearance on all sides of the generator except the exhaust end so that maintenance and cooling are possible. Refer to CSA C-282-19, Article 6.5.1.1."
         },
         {
           "id": "item-7-113",
@@ -1910,7 +2022,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "When multiple generators share a room, ensure the required 1 m clearances around each unit do not overlap so that access and cooling are adequate. Refer to CSA C-282-19, Article 6.5.2."
         },
         {
           "id": "item-7-114",
@@ -1927,7 +2040,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Maintain minimum 1 m clearance around electrical equipment so that access for operation and maintenance is safe and code-compliant. Refer to CEC 2021, Article 2-308(1)."
         },
         {
           "id": "item-7-115",
@@ -1944,7 +2058,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Where there is only one exit path and equipment is 1200 A or more or over 750 V, increase clearance to at least 1.5 m so that egress and safety are adequate. Refer to CEC 2021, Article 2-310(2)."
         },
         {
           "id": "item-7-116",
@@ -1960,7 +2075,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HIGH VOLTAGE"
-          ]
+          ],
+          "details": "Detail the HV station ground electrode, ground mat, and bonding to adjacent metal; provide step and touch calculations and specify ground testing scope so that the installation is safe. Refer to CEC 2021, Article 36-300 to 36-312."
         },
         {
           "id": "item-7-117",
@@ -1976,7 +2092,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HIGH VOLTAGE"
-          ]
+          ],
+          "details": "Provide visible and/or remote disconnection means for all HV sources so that the installation can be safely isolated (e.g. CEC 36-214). Refer to CEC 2021, Article 36-214."
         },
         {
           "id": "item-7-118",
@@ -1992,7 +2109,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Provide emergency battery pack lighting in generator and emergency switchgear rooms (50 lx for 2 h) per CSA C282 so that maintenance and egress are safe. Refer to CSA C282-19, Article 6.11.1."
         },
         {
           "id": "item-7-119",
@@ -2009,7 +2127,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show convenience outlets in all service rooms and electrical/communication riser closets so that maintenance and testing have power."
         },
         {
           "id": "item-7-120",
@@ -2026,7 +2145,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show housekeeping pads for equipment that requires them so that structural and electrical scope are clear."
         }
       ]
     },
@@ -2048,7 +2168,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Provide photocell and/or timer control for exterior lighting so that lights operate only when needed and energy code requirements are met."
         },
         {
           "id": "item-8-122",
@@ -2064,7 +2185,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Check voltage drop to exterior fixtures so that light output and lamp life are acceptable at the end of the run."
         },
         {
           "id": "item-8-123",
@@ -2081,7 +2203,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Ensure luminaire mounting is compatible with the ceiling type (e.g. suspended, concrete, insulated) so that installation is feasible and code-compliant."
         },
         {
           "id": "item-8-124",
@@ -2098,7 +2221,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Indicate fixture types on the drawings and include them on the fixture schedule so that procurement and installation are clear."
         },
         {
           "id": "item-8-125",
@@ -2115,7 +2239,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Exit signs are required per NBC. Verify that all required locations are shown and that the type (e.g. running man) meets the authority having jurisdiction. Refer to NBC 2020, Article 3.4.5.1.(1)\n9.9.11.3.(1)."
         },
         {
           "id": "item-8-126",
@@ -2132,7 +2257,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Where the path of egress is not obvious, provide directional exit signs per NBC so that occupants can find the way out. Refer to NBC 2020, Article 3.4.5.1.(6)&(7)\n9.9.11.3.(6)."
         },
         {
           "id": "item-8-127",
@@ -2148,7 +2274,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RENOVATION"
-          ]
+          ],
+          "details": "For existing buildings with legacy exit signage, confirm with the AHJ whether running man upgrades are required outside the renovation area."
         },
         {
           "id": "item-8-128",
@@ -2165,7 +2292,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Provide emergency lighting where required by NBC (e.g. 3.2.7.3, 9.9.12.3) so that egress is illuminated during a power failure. Refer to NBC 2020, Article 3.2.7.3\n9.9.12.3."
         },
         {
           "id": "item-8-129",
@@ -2181,7 +2309,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Provide emergency lighting on exterior egress routes (stairs, pathways from door to public thoroughfare, roofs to mechanical equipment) so that egress is safe after dark during an outage."
         },
         {
           "id": "item-8-130",
@@ -2198,7 +2327,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Note on the drawings the required duration of emergency lighting (30 min, 1 h, or 2 h) per NBC 3.2.7.4 so that battery packs and circuits are sized correctly. Refer to NBC 2020, Article 3.2.7.4.(1)(b)."
         },
         {
           "id": "item-8-131",
@@ -2215,7 +2345,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Emergency battery packs should be on the same circuit as the normal area lighting per CEC 46-304 so that they charge and activate correctly. Refer to CEC 2021, Article 46-304(4)."
         },
         {
           "id": "item-8-132",
@@ -2232,7 +2363,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Check voltage drop to remote DC emergency heads (e.g. CEC Table D4) so that lamp output is adequate at the end of the run. Refer to CEC 2021, Article Table D4."
         },
         {
           "id": "item-8-133",
@@ -2249,7 +2381,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify lighting levels in public areas meet NBC and design criteria so that safety and usability are met. Refer to NBC 2020, Article 3.2.7.1\n9.34.2.7.(3)."
         },
         {
           "id": "item-8-134",
@@ -2266,7 +2399,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Specify diffusers and lenses where required by NBC (e.g. 3.1.13.4) so that glare and light distribution are appropriate. Refer to NBC 2020, Article 3.1.13.4."
         },
         {
           "id": "item-8-135",
@@ -2283,7 +2417,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Recessed luminaires in insulated ceilings must be IC-rated per NBC 3.2.7.2 so that contact with insulation does not create a fire hazard. Refer to NBC 2020, Article 3.2.7.2."
         },
         {
           "id": "item-8-136",
@@ -2300,7 +2435,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Luminaires in showers, steam rooms, and other wet locations must be marked for wet location use per CEC 30-318 so that they are safe in the environment. Refer to CEC 2021, Article 30-318."
         },
         {
           "id": "item-8-137",
@@ -2317,7 +2453,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Coordinate with architectural and millwork details for under-counter, task, and feature lighting so that fixture locations and types are buildable."
         },
         {
           "id": "item-8-138",
@@ -2334,7 +2471,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Ensure the architectural RCP matches the electrical drawings: ceiling types, fixture and device locations. Show drop ceilings shaded on electrical drawings for clarity."
         },
         {
           "id": "item-8-139",
@@ -2351,7 +2489,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Check that lighting and sensor locations do not conflict with ductwork or other mechanical elements so that installation is feasible."
         },
         {
           "id": "item-8-140",
@@ -2367,7 +2506,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Provide lights with wall switches in dwelling units as prescribed; a switched receptacle may be used in lieu of a light in bedroom and living room. Provide exterior light and switch for units with exterior access. Refer to NBC 2020, Article 3.2.7.1.(8)."
         },
         {
           "id": "item-8-141",
@@ -2383,7 +2523,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Provide lights with wall switches in dwelling units as prescribed; a switched receptacle may be used in lieu of a light in bedroom and living room. Provide exterior light and switch for units with exterior access. Refer to NBC 2020, Article 9.34.2."
         },
         {
           "id": "item-8-142",
@@ -2400,7 +2541,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-8-143",
@@ -2417,7 +2559,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-8-144",
@@ -2434,7 +2577,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-8-145",
@@ -2451,7 +2595,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Detail a suitably close location for low-voltage drivers (e.g. for decorative LED panels, handrail lights) so that maintenance is possible and cable runs are within limits."
         },
         {
           "id": "item-8-146",
@@ -2467,7 +2612,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Do not place lights above garage or loading doors, gates, or rotating fans so that they are not damaged or obscured by movement and so that access for replacement is safe."
         },
         {
           "id": "item-8-147",
@@ -2483,7 +2629,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "In corridors, wall sconces must meet the applicable projection and width requirements (e.g. max depth 100 mm, no reduction of min. corridor width) per NBC so that egress width and clear height are maintained. Refer to NBC 2020, Article 3.3.1.8.(3)\n9.9.5.3.(2)."
         },
         {
           "id": "item-8-148",
@@ -2499,7 +2646,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "In corridors, wall sconces must meet the applicable projection and width requirements (e.g. max depth 100 mm, no reduction of min. corridor width) per NBC so that egress width and clear height are maintained. Refer to NBC 2020, Article 3.3.1.9.(2)."
         },
         {
           "id": "item-8-149",
@@ -2515,7 +2663,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Ensure surface-mounted ceiling lights do not reduce the minimum clear height in corridors or exits (e.g. 2050 mm per NBC) so that egress requirements are met. Refer to NBC 2020, Article 3.3.1.8.(1)\n9.9.3.4.(1)."
         },
         {
           "id": "item-8-150",
@@ -2531,7 +2680,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-8-151",
@@ -2547,7 +2697,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Revenue meter locations, clearances, meter bases, CT/PT compartments, conduit, sealing, and communications must conform to utility standards. Confirm details with the utility."
         },
         {
           "id": "item-8-152",
@@ -2560,7 +2711,8 @@
             "CD",
             "VBBL 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to VBBL 2019, Article 10.2.2.10.(1)(b)."
         },
         {
           "id": "item-8-153",
@@ -2573,7 +2725,8 @@
             "CD",
             "VBBL 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to VBBL 2019, Article 10.2.2.10.(1)(b)."
         },
         {
           "id": "item-8-154",
@@ -2590,7 +2743,8 @@
             "NBC (AE) 2019",
             "TI",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 30-320(3)."
         },
         {
           "id": "item-8-155",
@@ -2606,7 +2760,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CSA Z32-21, Article 6.5.1."
         },
         {
           "id": "item-8-156",
@@ -2623,7 +2778,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Ensure this is met so that the installation complies with code and utility requirements."
         },
         {
           "id": "item-8-157",
@@ -2639,7 +2795,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-8-158",
@@ -2655,7 +2812,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-8-159",
@@ -2671,7 +2829,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-8-160",
@@ -2687,7 +2846,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "JUSTICE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-8-161",
@@ -2703,7 +2863,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-8-162",
@@ -2716,7 +2877,8 @@
             "CD",
             "VBBL 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to VBBL 2019, Article 3.3.7.7.(8)."
         },
         {
           "id": "item-8-163",
@@ -2733,7 +2895,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 46-400."
         }
       ]
     },
@@ -2756,7 +2919,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.6.4.3\n3.1.4.3.(2)\n3.1.5.21.(2)."
         },
         {
           "id": "item-9-165",
@@ -2773,7 +2937,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-9-166",
@@ -2789,7 +2954,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information. Refer to CEC 2021, Article 26-600."
         },
         {
           "id": "item-9-167",
@@ -2806,7 +2972,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.8.3.8."
         },
         {
           "id": "item-9-168",
@@ -2823,7 +2990,8 @@
             "NBC (AE) 2019",
             "TI",
             "RENOVATION"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-9-169",
@@ -2839,7 +3007,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information. Refer to CEC 2021, Article 26-710(m)."
         },
         {
           "id": "item-9-170",
@@ -2856,7 +3025,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-9-171",
@@ -2872,7 +3042,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Confirm this with the relevant party or documentation so that the design can accommodate requirements and avoid rework."
         },
         {
           "id": "item-9-172",
@@ -2889,7 +3060,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-9-173",
@@ -2906,7 +3078,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-9-174",
@@ -2923,7 +3096,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.8.2.7."
         },
         {
           "id": "item-9-175",
@@ -2940,7 +3114,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information. Refer to NBC 2020, Article 3.8.3.6.(6)(a)(v)."
         },
         {
           "id": "item-9-176",
@@ -2957,7 +3132,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-9-177",
@@ -2974,7 +3150,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-9-178",
@@ -2991,7 +3168,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Review or check as stated so that the design is consistent and all provisions are incorporated."
         },
         {
           "id": "item-9-179",
@@ -3008,7 +3186,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-9-180",
@@ -3024,7 +3203,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-9-181",
@@ -3041,7 +3221,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 26-704."
         },
         {
           "id": "item-9-182",
@@ -3057,7 +3238,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 26-658."
         },
         {
           "id": "item-9-183",
@@ -3073,7 +3255,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 26-722(d)."
         },
         {
           "id": "item-9-184",
@@ -3089,7 +3272,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 26-722(d)."
         },
         {
           "id": "item-9-185",
@@ -3102,7 +3286,8 @@
             "CD",
             "VBBL 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to VBBL 2019, Article 3.8.3.1.(3)(f)."
         },
         {
           "id": "item-9-186",
@@ -3117,7 +3302,8 @@
             "BCBC 2024",
             "VBBL 2019",
             "NBC (AE) 2019"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-9-187",
@@ -3133,7 +3319,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-9-188",
@@ -3149,7 +3336,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Detail the parking gate or kiosk pedestal base so that structural and electrical scope are clear."
         },
         {
           "id": "item-9-189",
@@ -3165,7 +3353,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-9-190",
@@ -3181,7 +3370,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "JUSTICE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-9-191",
@@ -3197,7 +3387,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information. Refer to CEC 2021, Article 26-706."
         },
         {
           "id": "item-9-192",
@@ -3213,7 +3404,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information. Refer to CSA Z32-21, Article 5.6.1.3."
         },
         {
           "id": "item-9-193",
@@ -3230,7 +3422,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information. Refer to CEC 2021, Article 26-708."
         },
         {
           "id": "item-9-194",
@@ -3247,7 +3440,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information. Refer to CEC 2021, Article Diagrams 1&2."
         },
         {
           "id": "item-9-195",
@@ -3263,7 +3457,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 24-104."
         },
         {
           "id": "item-9-196",
@@ -3279,7 +3474,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-9-197",
@@ -3295,7 +3491,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 24-106."
         },
         {
           "id": "item-9-198",
@@ -3311,7 +3508,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-9-199",
@@ -3327,7 +3525,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-9-200",
@@ -3343,7 +3542,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-9-201",
@@ -3360,7 +3560,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-9-202",
@@ -3376,7 +3577,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 26-652."
         }
       ]
     },
@@ -3399,7 +3601,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-10-204",
@@ -3416,7 +3619,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-10-205",
@@ -3433,7 +3637,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-10-206",
@@ -3450,7 +3655,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information. Refer to NBC 2020, Article 3.1.8.11.(3)."
         },
         {
           "id": "item-10-207",
@@ -3467,7 +3673,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-10-208",
@@ -3484,7 +3691,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 62-116(1)."
         },
         {
           "id": "item-10-209",
@@ -3501,7 +3709,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-10-210",
@@ -3517,7 +3726,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 2-104(1)."
         },
         {
           "id": "item-10-211",
@@ -3533,7 +3743,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Confirming heating, cooling, and domestic hot water approach (gas vs. electric; distributed vs. centralized) with the mechanical consultant ensures load calculations and service sizing are based on the correct assumptions."
         },
         {
           "id": "item-10-212",
@@ -3549,7 +3760,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-10-213",
@@ -3566,7 +3778,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 26-710."
         },
         {
           "id": "item-10-214",
@@ -3583,7 +3796,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-10-215",
@@ -3600,7 +3814,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-10-216",
@@ -3616,7 +3831,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 62-132."
         },
         {
           "id": "item-10-217",
@@ -3632,7 +3848,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 62-130."
         },
         {
           "id": "item-10-218",
@@ -3649,7 +3866,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 62-110."
         },
         {
           "id": "item-10-219",
@@ -3665,7 +3883,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Confirming heating, cooling, and domestic hot water approach (gas vs. electric; distributed vs. centralized) with the mechanical consultant ensures load calculations and service sizing are based on the correct assumptions."
         },
         {
           "id": "item-10-220",
@@ -3681,7 +3900,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         }
       ]
     },
@@ -3703,7 +3923,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-11-222",
@@ -3719,7 +3940,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-11-223",
@@ -3735,7 +3957,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-11-224",
@@ -3751,7 +3974,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-11-225",
@@ -3767,7 +3991,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CSA C282-19, Article 9.5.1."
         },
         {
           "id": "item-11-226",
@@ -3783,7 +4008,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 84-002."
         },
         {
           "id": "item-11-227",
@@ -3799,7 +4025,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Ensure this is met so that the installation complies with code and utility requirements."
         },
         {
           "id": "item-11-228",
@@ -3815,7 +4042,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "GENERATOR"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.6.1.5."
         }
       ]
     },
@@ -3837,7 +4065,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CSA B44-16, Article 2.7.6.3.2.(c)."
         },
         {
           "id": "item-12-230",
@@ -3853,7 +4082,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 38-023(4)."
         },
         {
           "id": "item-12-231",
@@ -3869,7 +4099,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CSA B44-16, Article 2.2.5."
         },
         {
           "id": "item-12-232",
@@ -3885,7 +4116,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CSA B44-16, Article 2.3.3.3."
         },
         {
           "id": "item-12-233",
@@ -3901,7 +4133,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-12-234",
@@ -3917,7 +4150,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CSA B44-16, Article 2.11.10.2."
         },
         {
           "id": "item-12-235",
@@ -3933,7 +4167,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-12-236",
@@ -3949,7 +4184,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-12-237",
@@ -3965,7 +4201,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 38-051(1)(a)."
         },
         {
           "id": "item-12-238",
@@ -3981,7 +4218,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 38-051(b)."
         },
         {
           "id": "item-12-239",
@@ -3997,7 +4235,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-12-240",
@@ -4013,7 +4252,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-12-241",
@@ -4029,7 +4269,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 38-091(5)."
         },
         {
           "id": "item-12-242",
@@ -4045,7 +4286,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 38-091(2)."
         },
         {
           "id": "item-12-243",
@@ -4061,7 +4303,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-12-244",
@@ -4077,7 +4320,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CSA B44-16, Article 2.27.3.2.2."
         },
         {
           "id": "item-12-245",
@@ -4093,7 +4337,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.11.(1)(g)."
         },
         {
           "id": "item-12-246",
@@ -4109,7 +4354,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.10.(2)(e)."
         },
         {
           "id": "item-12-247",
@@ -4125,7 +4371,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CSA B44-16, Article 2.27.3.2.2.(b)."
         },
         {
           "id": "item-12-248",
@@ -4141,7 +4388,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CSA B44-16, Article 2.27.3.2.2.(a)."
         },
         {
           "id": "item-12-249",
@@ -4157,7 +4405,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CSA B44-16, Article 2.27.2.3."
         },
         {
           "id": "item-12-250",
@@ -4173,7 +4422,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-12-251",
@@ -4189,7 +4439,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 38-023."
         },
         {
           "id": "item-12-252",
@@ -4205,7 +4456,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 38-023."
         },
         {
           "id": "item-12-253",
@@ -4221,7 +4473,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "ELEVATORS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 38-024."
         }
       ]
     },
@@ -4243,7 +4496,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.9.(5)."
         },
         {
           "id": "item-13-255",
@@ -4259,7 +4513,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.9.(3)(e)."
         },
         {
           "id": "item-13-256",
@@ -4275,7 +4530,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-13-257",
@@ -4291,7 +4547,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-13-258",
@@ -4307,7 +4564,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.7."
         },
         {
           "id": "item-13-259",
@@ -4323,7 +4581,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.8.(1)."
         },
         {
           "id": "item-13-260",
@@ -4339,7 +4598,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-13-261",
@@ -4355,7 +4615,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-13-262",
@@ -4372,7 +4633,8 @@
             "NBC (AE) 2019",
             "HEALTHCARE",
             "JUSTICE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-13-263",
@@ -4389,7 +4651,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-13-264",
@@ -4406,7 +4669,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to ULC S524-19."
         },
         {
           "id": "item-13-265",
@@ -4419,7 +4683,8 @@
             "CD",
             "VBBL 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to VBBL 2019, Article 3.2.4.8.(8)."
         },
         {
           "id": "item-13-266",
@@ -4432,7 +4697,8 @@
             "CD",
             "VBBL 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to VBBL 2019, Article 3.2.5.20."
         },
         {
           "id": "item-13-267",
@@ -4447,7 +4713,8 @@
             "BCBC 2024",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Review or check as stated so that the design is consistent and all provisions are incorporated."
         },
         {
           "id": "item-13-268",
@@ -4463,7 +4730,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.7.8."
         },
         {
           "id": "item-13-269",
@@ -4479,7 +4747,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to ULC S561-13, Article 6.2.1."
         },
         {
           "id": "item-13-270",
@@ -4497,7 +4766,8 @@
             "RESIDENTIAL",
             "HEALTHCARE",
             "JUSTICE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.20."
         },
         {
           "id": "item-13-271",
@@ -4515,7 +4785,8 @@
             "RESIDENTIAL",
             "HEALTHCARE",
             "JUSTICE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 9.10.19."
         },
         {
           "id": "item-13-272",
@@ -4532,7 +4803,8 @@
             "NBC (AE) 2019",
             "RESIDENTIAL",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.20.(3)."
         },
         {
           "id": "item-13-273",
@@ -4549,7 +4821,8 @@
             "NBC (AE) 2019",
             "RESIDENTIAL",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.20.(4)."
         },
         {
           "id": "item-13-274",
@@ -4565,7 +4838,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.20.(7)&(8)."
         },
         {
           "id": "item-13-275",
@@ -4582,7 +4856,8 @@
             "NBC (AE) 2019",
             "RESIDENTIAL",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to ULC S553-14."
         },
         {
           "id": "item-13-276",
@@ -4600,7 +4875,8 @@
             "RESIDENTIAL",
             "HEALTHCARE",
             "JUSTICE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 32-200(1)(a)."
         },
         {
           "id": "item-13-277",
@@ -4617,7 +4893,8 @@
             "NBC (AE) 2019",
             "RESIDENTIAL",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 6.9.3.1.(3),(4),(5)."
         },
         {
           "id": "item-13-278",
@@ -4634,7 +4911,8 @@
             "NBC (AE) 2019",
             "RESIDENTIAL",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 9.32.3.9.(4),(5),(6)."
         },
         {
           "id": "item-13-279",
@@ -4649,7 +4927,8 @@
             "VBBL 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to BCBC 2024\nVBBL 2019, Article 6.9.3.1."
         },
         {
           "id": "item-13-280",
@@ -4666,7 +4945,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information. Refer to NBC 2020, Article 3.2.4.18.(1)."
         },
         {
           "id": "item-13-281",
@@ -4682,7 +4962,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-13-282",
@@ -4699,7 +4980,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-13-283",
@@ -4715,7 +4997,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.18.(5)."
         },
         {
           "id": "item-13-284",
@@ -4731,7 +5014,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.18.(8)."
         },
         {
           "id": "item-13-285",
@@ -4747,7 +5031,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-13-286",
@@ -4760,7 +5045,8 @@
             "CD",
             "VBBL 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to VBBL 2019, Article 3.2.4.18.(13)."
         },
         {
           "id": "item-13-287",
@@ -4777,7 +5063,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.19.(1)(c)."
         },
         {
           "id": "item-13-288",
@@ -4790,7 +5077,8 @@
             "CD",
             "NBC 2020",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.19.(1)(e)&(f)."
         },
         {
           "id": "item-13-289",
@@ -4803,7 +5091,8 @@
             "CD",
             "NBC 2020",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.19.(1)(g)."
         },
         {
           "id": "item-13-290",
@@ -4817,7 +5106,8 @@
             "NBC 2020",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.19.(1)(h)."
         },
         {
           "id": "item-13-291",
@@ -4834,7 +5124,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to ULC S524-19."
         },
         {
           "id": "item-13-292",
@@ -4850,7 +5141,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-13-293",
@@ -4863,7 +5155,8 @@
             "CD",
             "BCBC 2024",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to BCBC 2024, Article 3.8.5.3.(4)."
         },
         {
           "id": "item-13-294",
@@ -4876,7 +5169,8 @@
             "CD",
             "VBBL 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to VBBL 2019, Article 3.8.5.7.(4)."
         },
         {
           "id": "item-13-295",
@@ -4889,7 +5183,8 @@
             "CD",
             "BCBC 2024",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to BCBC 2024, Article 3.8.2.12.(5)."
         },
         {
           "id": "item-13-296",
@@ -4902,7 +5197,8 @@
             "CD",
             "VBBL 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to VBBL 2019, Article 3.8.2.12.(5)."
         },
         {
           "id": "item-13-297",
@@ -4915,7 +5211,8 @@
             "CD",
             "VBBL 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to VBBL 2019, Article 3.2.4.8.(9)."
         },
         {
           "id": "item-13-298",
@@ -4931,7 +5228,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.11.(1)(a)."
         },
         {
           "id": "item-13-299",
@@ -4947,7 +5245,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "JUSTICE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.11.(1)(b)."
         },
         {
           "id": "item-13-300",
@@ -4963,7 +5262,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.11.(1)(b)."
         },
         {
           "id": "item-13-301",
@@ -4979,7 +5279,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.11.(1)(d)."
         },
         {
           "id": "item-13-302",
@@ -4995,7 +5296,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.11.(1)(e)."
         },
         {
           "id": "item-13-303",
@@ -5011,7 +5313,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to ULC S524-19, Article 28.11.2."
         },
         {
           "id": "item-13-304",
@@ -5028,7 +5331,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.11.(1)(f)."
         },
         {
           "id": "item-13-305",
@@ -5044,7 +5348,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.11.(5)."
         },
         {
           "id": "item-13-306",
@@ -5060,7 +5365,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HIGH VOLTAGE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.6.2.7.(3)(b)."
         },
         {
           "id": "item-13-307",
@@ -5077,7 +5383,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to ULC S524-19, Article 27.1.5."
         },
         {
           "id": "item-13-308",
@@ -5093,7 +5400,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HIGH VOLTAGE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.6.2.7.(7)."
         },
         {
           "id": "item-13-309",
@@ -5109,7 +5417,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.10.(2)."
         },
         {
           "id": "item-13-310",
@@ -5125,7 +5434,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-13-311",
@@ -5141,7 +5451,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Confirming heating, cooling, and domestic hot water approach (gas vs. electric; distributed vs. centralized) with the mechanical consultant ensures load calculations and service sizing are based on the correct assumptions. Refer to NBC 2020, Article 3.2.4.12."
         },
         {
           "id": "item-13-312",
@@ -5157,7 +5468,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "RESIDENTIAL"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 9.10.18.5."
         },
         {
           "id": "item-13-313",
@@ -5173,7 +5485,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to ULC S524-19."
         },
         {
           "id": "item-13-314",
@@ -5189,7 +5502,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to ULC S524-19."
         },
         {
           "id": "item-13-315",
@@ -5206,7 +5520,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.16."
         },
         {
           "id": "item-13-316",
@@ -5222,7 +5537,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-13-317",
@@ -5238,7 +5554,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 6.9.3.1.(4)."
         },
         {
           "id": "item-13-318",
@@ -5254,7 +5571,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 9.32.3.9.(5)."
         },
         {
           "id": "item-13-319",
@@ -5271,7 +5589,8 @@
             "NBC (AE) 2019",
             "HEALTHCARE",
             "JUSTICE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-13-320",
@@ -5287,7 +5606,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "JUSTICE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-13-321",
@@ -5303,7 +5623,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "JUSTICE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-13-322",
@@ -5319,7 +5640,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HIGH BUILDING"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.6.7.(1)."
         },
         {
           "id": "item-13-323",
@@ -5335,7 +5657,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HIGH BUILDING"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.7.10."
         },
         {
           "id": "item-13-324",
@@ -5351,7 +5674,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HIGH BUILDING"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.6.8."
         },
         {
           "id": "item-13-325",
@@ -5367,7 +5691,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HIGH BUILDING"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.22.(1)(b)."
         },
         {
           "id": "item-13-326",
@@ -5383,7 +5708,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HIGH BUILDING"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.22.(5)."
         },
         {
           "id": "item-13-327",
@@ -5399,7 +5725,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HIGH BUILDING"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information. Refer to NBC 2020, Article 3.2.6.7.(2)(i)."
         },
         {
           "id": "item-13-328",
@@ -5416,7 +5743,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information. Refer to NBC 2020, Article 3.1.8.14."
         },
         {
           "id": "item-13-329",
@@ -5433,7 +5761,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.4.6.16.(5)."
         },
         {
           "id": "item-13-330",
@@ -5450,7 +5779,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 6.3.1.6."
         },
         {
           "id": "item-13-331",
@@ -5467,7 +5797,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.18.(10)(a)."
         },
         {
           "id": "item-13-332",
@@ -5484,7 +5815,8 @@
             "NBC (AE) 2019",
             "RESIDENTIAL",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.18.(10)(b)."
         },
         {
           "id": "item-13-333",
@@ -5501,7 +5833,8 @@
             "NBC (AE) 2019",
             "RESIDENTIAL",
             "HEALTHCARE"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to NBC 2020, Article 3.2.4.18.(9)."
         },
         {
           "id": "item-13-334",
@@ -5517,7 +5850,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HIGH BUILDING"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-13-335",
@@ -5533,7 +5867,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-13-336",
@@ -5549,7 +5884,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "HIGH BUILDING"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information. Refer to NBC 2020, Article 3.2.7.10."
         },
         {
           "id": "item-13-337",
@@ -5565,7 +5901,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to ULC S524-19."
         },
         {
           "id": "item-13-338",
@@ -5581,7 +5918,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-13-339",
@@ -5597,7 +5935,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information. Refer to CEC 2021, Article 32-108(2)."
         }
       ]
     },
@@ -5619,7 +5958,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-14-341",
@@ -5635,7 +5975,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-14-342",
@@ -5651,7 +5992,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-14-343",
@@ -5667,7 +6009,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-14-344",
@@ -5683,7 +6026,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-14-345",
@@ -5699,7 +6043,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 64-218."
         },
         {
           "id": "item-14-346",
@@ -5715,7 +6060,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 64-216."
         },
         {
           "id": "item-14-347",
@@ -5731,7 +6077,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 64-060 & 84-024."
         },
         {
           "id": "item-14-348",
@@ -5747,7 +6094,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 64-202."
         },
         {
           "id": "item-14-349",
@@ -5763,7 +6111,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 64-202(4)."
         },
         {
           "id": "item-14-350",
@@ -5779,7 +6128,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 64-058(4)."
         },
         {
           "id": "item-14-351",
@@ -5795,7 +6145,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 64-060(12)."
         },
         {
           "id": "item-14-352",
@@ -5811,7 +6162,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 64-112(4)(c)."
         },
         {
           "id": "item-14-353",
@@ -5827,7 +6179,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 84-030."
         },
         {
           "id": "item-14-354",
@@ -5843,7 +6196,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-14-355",
@@ -5859,7 +6213,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant. Refer to CEC 2021, Article 64-062 & 64-204."
         },
         {
           "id": "item-14-356",
@@ -5875,7 +6230,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-14-357",
@@ -5891,7 +6247,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-14-358",
@@ -5907,7 +6264,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Confirm this with the relevant party or documentation so that the design can accommodate requirements and avoid rework."
         },
         {
           "id": "item-14-359",
@@ -5923,7 +6281,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-14-360",
@@ -5939,7 +6298,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-14-361",
@@ -5955,7 +6315,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information. Refer to CEC 2021, Article 64-218."
         },
         {
           "id": "item-14-362",
@@ -5971,7 +6332,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-14-363",
@@ -5987,7 +6349,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information. Refer to CEC 2021, Article 64-060."
         },
         {
           "id": "item-14-364",
@@ -6003,7 +6366,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information."
         },
         {
           "id": "item-14-365",
@@ -6019,7 +6383,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "PHOTOVOLTAICS"
-          ]
+          ],
+          "details": "Show or indicate this on the drawings so that contractors and reviewers have clear, coordinated information. Refer to CEC 2021, Article 64-112."
         }
       ]
     },
@@ -6042,7 +6407,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-15-367",
@@ -6059,7 +6425,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-15-368",
@@ -6076,7 +6443,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-15-369",
@@ -6093,7 +6461,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-15-370",
@@ -6110,7 +6479,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         }
       ]
     },
@@ -6133,7 +6503,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-16-372",
@@ -6150,7 +6521,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-16-373",
@@ -6167,7 +6539,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         }
       ]
     },
@@ -6189,7 +6562,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "EDUCATION"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-17-375",
@@ -6205,7 +6579,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "EDUCATION"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-17-376",
@@ -6221,7 +6596,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "EDUCATION"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         }
       ]
     },
@@ -6244,7 +6620,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-18-378",
@@ -6261,7 +6638,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-18-379",
@@ -6278,7 +6656,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-18-380",
@@ -6295,7 +6674,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-18-381",
@@ -6311,7 +6691,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-18-382",
@@ -6328,7 +6709,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-18-383",
@@ -6345,7 +6727,8 @@
             "NBC (AE) 2019",
             "NEW CONST.",
             "TI"
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         }
       ]
     },
@@ -6367,7 +6750,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-19-385",
@@ -6383,7 +6767,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-19-386",
@@ -6399,7 +6784,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-19-387",
@@ -6415,7 +6801,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Vista switch (or similar utility-owned switching) requirements are set by the utility for high-voltage or complex services. Confirm so that the single-line diagram and specs are correct."
         },
         {
           "id": "item-19-388",
@@ -6431,7 +6818,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-19-389",
@@ -6447,7 +6835,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-19-390",
@@ -6463,7 +6852,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-19-391",
@@ -6479,7 +6869,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-19-392",
@@ -6495,7 +6886,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-19-393",
@@ -6511,7 +6903,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-19-394",
@@ -6527,7 +6920,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-19-395",
@@ -6543,7 +6937,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-19-396",
@@ -6559,7 +6954,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         },
         {
           "id": "item-19-397",
@@ -6575,7 +6971,8 @@
             "VBBL 2019",
             "NBC (AE) 2019",
             "NEW CONST."
-          ]
+          ],
+          "details": "Verify this requirement is addressed so that the design is complete and compliant."
         }
       ]
     }

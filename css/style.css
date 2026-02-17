@@ -567,7 +567,7 @@ body {
 /* Checklist item: TUI checkbox + text + notes */
 .tui-item {
   display: grid;
-  grid-template-columns: auto auto 1fr auto;
+  grid-template-columns: auto auto auto 1fr auto;
   gap: var(--space-lg);
   align-items: start;
   padding: var(--space) 0;
@@ -638,8 +638,52 @@ body {
   line-height: 1.4;
 }
 
+.tui-item-text.tui-item-expandable {
+  cursor: pointer;
+}
+
+.tui-expand-icon {
+  color: var(--text-dim);
+  margin-right: 4px;
+}
+
+.tui-item-details {
+  display: none;
+  grid-column: 4 / -1;
+  grid-row: 2;
+  margin-top: var(--space-sm);
+  padding: var(--space);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.tui-item-expanded .tui-item-details {
+  display: block;
+}
+
+.tui-detail-row {
+  margin-bottom: var(--space-sm);
+}
+
+.tui-detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.tui-detail-label {
+  font-weight: 600;
+  color: var(--text);
+  margin-right: 6px;
+}
+
+.tui-detail-notes {
+  white-space: pre-wrap;
+}
+
 .tui-item-notes {
-  grid-column: 2 / -1;
+  grid-column: 4 / -1;
+  grid-row: 3;
   margin-top: var(--space-sm);
 }
 
@@ -706,6 +750,180 @@ body {
   font-size: 12px;
   padding: var(--space-lg);
   text-align: center;
+}
+
+/* ─── Editor ───────────────────────────────────────────────────────────── */
+.tui-editor-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.tui-editor-toolbar label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.tui-editor-toolbar select {
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: var(--space-sm) var(--space);
+  background: var(--bg-pane);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.tui-editor-tree {
+  max-height: 60vh;
+  overflow: auto;
+}
+
+.tui-editor-section {
+  margin-bottom: var(--space-lg);
+  border: 1px solid var(--border);
+  padding: var(--space);
+  background: var(--bg-row);
+}
+
+.tui-editor-section-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space);
+  align-items: center;
+  margin-bottom: var(--space);
+}
+
+.tui-editor-section-head .tui-editor-input {
+  flex: 1;
+  min-width: 120px;
+}
+
+.tui-editor-id {
+  max-width: 140px;
+}
+
+.tui-editor-input {
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: var(--space-sm) var(--space);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.tui-editor-input:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.tui-editor-small {
+  max-width: 200px;
+}
+
+.tui-editor-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.tui-editor-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space);
+  align-items: center;
+}
+
+.tui-editor-item .tui-editor-input {
+  flex: 1;
+  min-width: 180px;
+}
+
+.tui-editor-rm {
+  padding: 2px 8px;
+  min-width: 28px;
+}
+
+.tui-editor-add-item {
+  margin-top: var(--space);
+}
+
+/* ─── Modal ───────────────────────────────────────────────────────────── */
+.tui-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+}
+
+.tui-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.tui-modal-box {
+  position: relative;
+  background: var(--bg-pane);
+  border: 1px solid var(--border);
+  padding: var(--space-lg);
+  max-width: 420px;
+  width: 100%;
+}
+
+.tui-modal-title {
+  margin: 0 0 var(--space) 0;
+  font-size: 14px;
+  color: var(--accent);
+}
+
+.tui-modal-desc {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-bottom: var(--space-lg);
+}
+
+.tui-modal-desc code {
+  font-size: 11px;
+  background: var(--bg);
+  padding: 2px 6px;
+}
+
+.tui-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
+  margin-bottom: var(--space-lg);
+}
+
+.tui-modal-form label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.tui-modal-form input {
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: var(--space) var(--space-lg);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.tui-modal-actions {
+  display: flex;
+  gap: var(--space);
+  justify-content: flex-end;
 }
 
 /* ─── Responsive ───────────────────────────────────────────────────────── */

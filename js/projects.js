@@ -22,6 +22,11 @@ function createProjectFromTemplate(templateId, templateVersion, templateDefiniti
         notes: '',
         updated_at: null,
         flagged: false,
+        na: false,
+        code_ref: item.code_ref || null,
+        article: item.article || null,
+        comments: item.comments || null,
+        details: item.details || item.explanatory_notes || null,
       });
     });
   });
@@ -34,6 +39,7 @@ function createProjectFromTemplate(templateId, templateVersion, templateDefiniti
     created_at: new Date().toISOString(),
     completed_at: null,
     items,
+    na_sections: [],
     superseded_by: null,
     upgraded_from: null,
   };
@@ -100,4 +106,45 @@ function projectStatus(project) {
 function countItemsNeedingReview(project) {
   if (!project.items) return 0;
   return project.items.filter((i) => i.status === 'pending' && (i.notes || '').trim()).length;
+}
+
+function isSectionNA(project, sectionId) {
+  const list = project.na_sections || [];
+  return list.indexOf(sectionId) !== -1;
+}
+
+function setSectionNA(projectId, sectionId, na) {
+  const project = getProjectById(projectId);
+  if (!project) return null;
+  let list = project.na_sections || [];
+  const idx = list.indexOf(sectionId);
+  if (na && idx === -1) list = list.concat(sectionId);
+  else if (!na && idx !== -1) list = list.slice(0, idx).concat(list.slice(idx + 1));
+  return updateProject(projectId, { na_sections: list });
+}
+
+function getApplicableCounts(project) {
+  if (!project.items) return { total: 0, done: 0 };
+  const naSections = project.na_sections || [];
+  let total = 0, done = 0;
+  project.items.forEach((i) => {
+    if (naSections.indexOf(i.sectionId) !== -1 || i.na) return;
+    total++;
+    if (i.status === 'done') done++;
+  });
+  return { total, done };
+}
+
+function getSectionApplicableCounts(project, sectionId) {
+  if (!project.items) return { total: 0, done: 0 };
+  const naSections = project.na_sections || [];
+  const sectionNA = naSections.indexOf(sectionId) !== -1;
+  if (sectionNA) return { total: 0, done: 0 };
+  let total = 0, done = 0;
+  project.items.forEach((i) => {
+    if (i.sectionId !== sectionId || i.na) return;
+    total++;
+    if (i.status === 'done') done++;
+  });
+  return { total, done };
 }
