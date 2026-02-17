@@ -7,50 +7,50 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="terminal">
-    <header class="header">
-      <h1 class="header-title">AES CHECKLIST TERMINAL</h1>
-      <nav class="header-nav">
-        <a href="#dashboard" class="nav-link active" data-view="dashboard">Dashboard</a>
-        <span class="nav-sep">|</span>
-        <a href="#templates" class="nav-link" data-view="templates">Templates</a>
-        <span class="nav-sep">|</span>
-        <a href="#projects" class="nav-link" data-view="projects">Projects</a>
-      </nav>
-      <div class="header-bar">----------------------------------------------------------------------</div>
+  <div class="tui">
+    <header class="tui-header" role="banner">
+      <div class="tui-header-top">
+        <h1 class="tui-logo">◇ AES CHECKLIST</h1>
+        <nav class="tui-nav" role="navigation" aria-label="Main">
+          <a href="#dashboard" class="tui-nav-item active" data-view="dashboard">[1] Dashboard</a>
+          <a href="#templates" class="tui-nav-item" data-view="templates">[2] Templates</a>
+          <a href="#projects" class="tui-nav-item" data-view="projects">[3] Projects</a>
+        </nav>
+      </div>
+      <div class="tui-header-bar">────────────────────────────────────────────────────────────────────────────</div>
     </header>
 
-    <main class="main">
-      <!-- Dashboard view -->
-      <section id="view-dashboard" class="view active">
-        <div class="kpi-row">
-          <div class="kpi-box">
-            <span class="kpi-value" id="kpi-active">0</span>
-            <span class="kpi-label">Active Projects</span>
+    <main class="tui-main" role="main">
+      <!-- Dashboard -->
+      <section id="view-dashboard" class="tui-view active" aria-label="Dashboard">
+        <div class="tui-kpi">
+          <div class="tui-kpi-cell">
+            <span class="tui-kpi-num" id="kpi-active">0</span>
+            <span class="tui-kpi-tag">ACTIVE</span>
           </div>
-          <div class="kpi-box">
-            <span class="kpi-value" id="kpi-completed">0</span>
-            <span class="kpi-label">Completed</span>
+          <div class="tui-kpi-cell">
+            <span class="tui-kpi-num" id="kpi-completed">0</span>
+            <span class="tui-kpi-tag">DONE</span>
           </div>
-          <div class="kpi-box">
-            <span class="kpi-value" id="kpi-old-version">0</span>
-            <span class="kpi-label">On Old Version</span>
+          <div class="tui-kpi-cell">
+            <span class="tui-kpi-num" id="kpi-old-version">0</span>
+            <span class="tui-kpi-tag">OLD VER</span>
           </div>
-          <div class="kpi-box">
-            <span class="kpi-value" id="kpi-needs-review">0</span>
-            <span class="kpi-label">Needing Review</span>
+          <div class="tui-kpi-cell">
+            <span class="tui-kpi-num" id="kpi-needs-review">0</span>
+            <span class="tui-kpi-tag">REVIEW</span>
           </div>
         </div>
-        <div class="dashboard-grid">
-          <div class="panel panel-wide">
-            <h2 class="panel-title">Project Activity</h2>
-            <div class="panel-body">
-              <table class="data-table" id="table-projects">
+        <div class="tui-grid">
+          <div class="tui-pane tui-pane-main">
+            <div class="tui-pane-head">┌─ Project Activity ─────────────────────────────────────────────────────</div>
+            <div class="tui-pane-body">
+              <table class="tui-table" id="table-projects">
                 <thead>
                   <tr>
                     <th>Project</th>
                     <th>Template</th>
-                    <th>Version</th>
+                    <th>Ver</th>
                     <th>Status</th>
                     <th>Created</th>
                     <th></th>
@@ -59,54 +59,62 @@
                 <tbody></tbody>
               </table>
             </div>
+            <div class="tui-pane-foot">└────────────────────────────────────────────────────────────────────────</div>
           </div>
-          <div class="panel panel-narrow">
-            <h2 class="panel-title">Recent Template Updates</h2>
-            <div class="panel-body" id="template-updates"></div>
-            <h2 class="panel-title">Audit Feed</h2>
-            <div class="panel-body audit-feed" id="audit-feed"></div>
+          <div class="tui-pane tui-pane-side">
+            <div class="tui-pane-head">┌─ Template Updates ─────</div>
+            <div class="tui-pane-body" id="template-updates"></div>
+            <div class="tui-pane-head">┌─ Audit ─────────────────</div>
+            <div class="tui-pane-body tui-audit" id="audit-feed"></div>
+            <div class="tui-pane-foot">└─────────────────────────</div>
           </div>
         </div>
       </section>
 
-      <!-- Templates view -->
-      <section id="view-templates" class="view">
-        <div class="panel">
-          <h2 class="panel-title">Available Templates</h2>
-          <div class="panel-body" id="templates-list"></div>
+      <!-- Templates -->
+      <section id="view-templates" class="tui-view" aria-label="Templates">
+        <div class="tui-pane">
+          <div class="tui-pane-head">┌─ Available Templates ────────────────────────────────────────────────────</div>
+          <div class="tui-pane-body" id="templates-list"></div>
+          <div class="tui-pane-foot">└────────────────────────────────────────────────────────────────────────</div>
         </div>
       </section>
 
-      <!-- Projects view -->
-      <section id="view-projects" class="view">
-        <div class="toolbar">
-          <button type="button" class="btn btn-primary" id="btn-import">Import JSON</button>
-          <button type="button" class="btn btn-secondary" id="btn-export">Export All</button>
+      <!-- Projects -->
+      <section id="view-projects" class="tui-view" aria-label="Projects">
+        <div class="tui-toolbar">
+          <button type="button" class="tui-btn tui-btn-alt" id="btn-import">Import</button>
+          <button type="button" class="tui-btn tui-btn-pri" id="btn-export">Export all</button>
           <input type="file" id="input-import" accept=".json" hidden>
         </div>
-        <div class="panel">
-          <h2 class="panel-title">Projects</h2>
-          <div class="panel-body" id="projects-list"></div>
+        <div class="tui-pane">
+          <div class="tui-pane-head">┌─ Projects ───────────────────────────────────────────────────────────────</div>
+          <div class="tui-pane-body" id="projects-list"></div>
+          <div class="tui-pane-foot">└────────────────────────────────────────────────────────────────────────</div>
         </div>
       </section>
 
-      <!-- Project detail view (checklist runner) -->
-      <section id="view-project-detail" class="view">
-        <div class="toolbar">
-          <button type="button" class="btn btn-back" id="btn-back-from-project">← Back</button>
-          <span class="project-detail-title" id="project-detail-title"></span>
-          <button type="button" class="btn btn-secondary" id="btn-upgrade-project" style="display:none;">Upgrade to New Version</button>
-          <button type="button" class="btn btn-primary" id="btn-export-project">Export Project</button>
+      <!-- Checklist (project detail) -->
+      <section id="view-project-detail" class="tui-view" aria-label="Checklist">
+        <div class="tui-checklist-bar">
+          <button type="button" class="tui-btn tui-btn-back" id="btn-back-from-project">◀ Back</button>
+          <span class="tui-checklist-title" id="project-detail-title"></span>
+          <span class="tui-checklist-progress" id="checklist-progress"></span>
+          <div class="tui-checklist-actions">
+            <button type="button" class="tui-btn tui-btn-alt" id="btn-upgrade-project" style="display:none;">Upgrade</button>
+            <button type="button" class="tui-btn tui-btn-pri" id="btn-export-project">Export</button>
+          </div>
         </div>
-        <div class="panel">
-          <div class="panel-body" id="checklist-body"></div>
+        <div class="tui-checklist-wrap">
+          <div class="tui-pane-body tui-checklist-body" id="checklist-body"></div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <span>No backend • No login • Data in browser only • Export/Import JSON</span>
+    <footer class="tui-footer">
+      <span class="tui-footer-text">localStorage • no backend • export/import JSON</span>
     </footer>
+    <div class="tui-status" id="status-line" role="status" aria-live="polite"></div>
   </div>
   <script src="js/storage.js"></script>
   <script src="js/templates.js"></script>
