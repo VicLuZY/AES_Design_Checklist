@@ -1,0 +1,35 @@
+{
+  "id": "electrical-checklist-2023",
+  "version": "v2",
+  "name": "2023 Electrical Checklist",
+  "sections": [
+    {
+      "id": "pre-inspection",
+      "title": "Pre-Inspection",
+      "items": [
+        { "id": "pre-1", "text": "Verify power disconnect is locked out", "type": "checkbox" },
+        { "id": "pre-2", "text": "Confirm voltage levels at panel", "type": "checkbox" },
+        { "id": "pre-3", "text": "Review single-line diagram", "type": "checkbox" }
+      ]
+    },
+    {
+      "id": "terminals",
+      "title": "Terminals & Connections",
+      "items": [
+        { "id": "term-1", "text": "Torque check on main lugs", "type": "checkbox" },
+        { "id": "term-2", "text": "Thermal scan of connections", "type": "checkbox" },
+        { "id": "term-3", "text": "Ground continuity verified", "type": "checkbox" }
+      ]
+    },
+    {
+      "id": "protection",
+      "title": "Protection & Coordination",
+      "items": [
+        { "id": "prot-1", "text": "Breaker settings documented", "type": "checkbox" },
+        { "id": "prot-2", "text": "Arc flash labels current", "type": "checkbox" },
+        { "id": "prot-3", "text": "Coordination study on file", "type": "checkbox" },
+        { "id": "prot-4", "text": "Arc flash verification step", "type": "checkbox" }
+      ]
+    }
+  ]
+}

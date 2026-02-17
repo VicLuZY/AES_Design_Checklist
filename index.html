@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AES Checklist Terminal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="terminal">
+    <header class="header">
+      <h1 class="header-title">AES CHECKLIST TERMINAL</h1>
+      <nav class="header-nav">
+        <a href="#dashboard" class="nav-link active" data-view="dashboard">Dashboard</a>
+        <span class="nav-sep">|</span>
+        <a href="#templates" class="nav-link" data-view="templates">Templates</a>
+        <span class="nav-sep">|</span>
+        <a href="#projects" class="nav-link" data-view="projects">Projects</a>
+      </nav>
+      <div class="header-bar">----------------------------------------------------------------------</div>
+    </header>
+
+    <main class="main">
+      <!-- Dashboard view -->
+      <section id="view-dashboard" class="view active">
+        <div class="kpi-row">
+          <div class="kpi-box">
+            <span class="kpi-value" id="kpi-active">0</span>
+            <span class="kpi-label">Active Projects</span>
+          </div>
+          <div class="kpi-box">
+            <span class="kpi-value" id="kpi-completed">0</span>
+            <span class="kpi-label">Completed</span>
+          </div>
+          <div class="kpi-box">
+            <span class="kpi-value" id="kpi-old-version">0</span>
+            <span class="kpi-label">On Old Version</span>
+          </div>
+          <div class="kpi-box">
+            <span class="kpi-value" id="kpi-needs-review">0</span>
+            <span class="kpi-label">Needing Review</span>
+          </div>
+        </div>
+        <div class="dashboard-grid">
+          <div class="panel panel-wide">
+            <h2 class="panel-title">Project Activity</h2>
+            <div class="panel-body">
+              <table class="data-table" id="table-projects">
+                <thead>
+                  <tr>
+                    <th>Project</th>
+                    <th>Template</th>
+                    <th>Version</th>
+                    <th>Status</th>
+                    <th>Created</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="panel panel-narrow">
+            <h2 class="panel-title">Recent Template Updates</h2>
+            <div class="panel-body" id="template-updates"></div>
+            <h2 class="panel-title">Audit Feed</h2>
+            <div class="panel-body audit-feed" id="audit-feed"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Templates view -->
+      <section id="view-templates" class="view">
+        <div class="panel">
+          <h2 class="panel-title">Available Templates</h2>
+          <div class="panel-body" id="templates-list"></div>
+        </div>
+      </section>
+
+      <!-- Projects view -->
+      <section id="view-projects" class="view">
+        <div class="toolbar">
+          <button type="button" class="btn btn-primary" id="btn-import">Import JSON</button>
+          <button type="button" class="btn btn-secondary" id="btn-export">Export All</button>
+          <input type="file" id="input-import" accept=".json" hidden>
+        </div>
+        <div class="panel">
+          <h2 class="panel-title">Projects</h2>
+          <div class="panel-body" id="projects-list"></div>
+        </div>
+      </section>
+
+      <!-- Project detail view (checklist runner) -->
+      <section id="view-project-detail" class="view">
+        <div class="toolbar">
+          <button type="button" class="btn btn-back" id="btn-back-from-project">← Back</button>
+          <span class="project-detail-title" id="project-detail-title"></span>
+          <button type="button" class="btn btn-secondary" id="btn-upgrade-project" style="display:none;">Upgrade to New Version</button>
+          <button type="button" class="btn btn-primary" id="btn-export-project">Export Project</button>
+        </div>
+        <div class="panel">
+          <div class="panel-body" id="checklist-body"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>No backend • No login • Data in browser only • Export/Import JSON</span>
+    </footer>
+  </div>
+  <script src="js/storage.js"></script>
+  <script src="js/templates.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "electrical-checklist-2023",
+    "name": "2023 Electrical Checklist",
+    "current_version": "v2",
+    "versions": [
+      {
+        "version": "v1",
+        "file": "electrical-checklist-2023.v1.json",
+        "published_at": "2026-02-16T00:00:00Z",
+        "changelog": "Initial import from Excel REF_TABLE."
+      },
+      {
+        "version": "v2",
+        "file": "electrical-checklist-2023.v2.json",
+        "published_at": "2026-03-01T00:00:00Z",
+        "changelog": "Added arc flash verification step."
+      }
+    ]
+  },
+  {
+    "id": "safety-inspection-2024",
+    "name": "2024 Safety Inspection",
+    "current_version": "v1",
+    "versions": [
+      {
+        "version": "v1",
+        "file": "safety-inspection-2024.v1.json",
+        "published_at": "2026-02-16T00:00:00Z",
+        "changelog": "Initial release."
+      }
+    ]
+  }
+]

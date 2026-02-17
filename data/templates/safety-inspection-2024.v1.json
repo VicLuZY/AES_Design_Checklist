@@ -1,0 +1,25 @@
+{
+  "id": "safety-inspection-2024",
+  "version": "v1",
+  "name": "2024 Safety Inspection",
+  "sections": [
+    {
+      "id": "ppe",
+      "title": "PPE & Access",
+      "items": [
+        { "id": "ppe-1", "text": "Hard hat and safety glasses available", "type": "checkbox" },
+        { "id": "ppe-2", "text": "Access path clear and signed", "type": "checkbox" },
+        { "id": "ppe-3", "text": "First aid kit stocked", "type": "checkbox" }
+      ]
+    },
+    {
+      "id": "hazard",
+      "title": "Hazard Assessment",
+      "items": [
+        { "id": "haz-1", "text": "Trip hazards identified and mitigated", "type": "checkbox" },
+        { "id": "haz-2", "text": "Emergency egress unobstructed", "type": "checkbox" },
+        { "id": "haz-3", "text": "Fire extinguisher present and current", "type": "checkbox" }
+      ]
+    }
+  ]
+}
