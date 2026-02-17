@@ -1,5 +1,18 @@
 [
   {
+    "id": "electrical-checklist-2023-R01",
+    "name": "2023 Electrical Checklist (R01-004)",
+    "current_version": "v1",
+    "versions": [
+      {
+        "version": "v1",
+        "file": "electrical-checklist-2023-R01.v1.json",
+        "published_at": "2026-02-16T00:00:00Z",
+        "changelog": "Full import from REF_TABLE: 19 sections, 397 items; phases SD/DD/CD/CT; project types and applicability preserved."
+      }
+    ]
+  },
+  {
     "id": "electrical-checklist-2023",
     "name": "2023 Electrical Checklist",
     "current_version": "v2",

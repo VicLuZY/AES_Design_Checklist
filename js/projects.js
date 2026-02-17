@@ -16,6 +16,7 @@ function createProjectFromTemplate(templateId, templateVersion, templateDefiniti
       items.push({
         id: item.id,
         sectionId: sec.id,
+        sectionTitle: sec.title || sec.id,
         text: item.text,
         status: 'pending',
         notes: '',

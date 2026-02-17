@@ -1,0 +1,9 @@
+# Source / tooling — not needed for static deployment
+read_only/
+scripts/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

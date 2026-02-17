@@ -213,9 +213,10 @@
       return acc;
     }, {});
 
-    body.innerHTML = Object.entries(sections).map(([sectionId, items]) =>
-      '<div class="checklist-section">' +
-      '<h3 class="checklist-section-title">' + escapeHtml(sectionId) + '</h3>' +
+    body.innerHTML = Object.entries(sections).map(([sectionId, items]) => {
+      const sectionTitle = (items[0] && items[0].sectionTitle) || sectionId;
+      return '<div class="checklist-section">' +
+      '<h3 class="checklist-section-title">' + escapeHtml(sectionTitle) + '</h3>' +
       items.map((item) => (
         '<div class="checklist-item" data-item-id="' + escapeHtml(item.id) + '">' +
         '<input type="checkbox" ' + (item.status === 'done' ? 'checked' : '') + ' data-item-check />' +
@@ -224,8 +225,8 @@
         '<div class="item-status">' + (item.updated_at ? formatDate(item.updated_at) : '') + '</div>' +
         '</div>'
       )).join('') +
-      '</div>'
-    ).join('');
+      '</div>';
+    }).join('');
 
     body.querySelectorAll('[data-item-check]').forEach((cb) => {
       cb.addEventListener('change', function () {
