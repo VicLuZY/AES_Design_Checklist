@@ -381,16 +381,156 @@ body {
   gap: var(--space);
 }
 
+.tui-checklist-filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space);
+  margin-bottom: var(--space);
+  padding: var(--space) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.tui-filter-label {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-right: var(--space-sm);
+}
+
+.tui-filter-btn {
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: var(--space-sm) var(--space);
+  border: 1px solid var(--border);
+  background: var(--bg-pane);
+  color: var(--text-dim);
+  cursor: pointer;
+}
+
+.tui-filter-btn:hover {
+  color: var(--text);
+  border-color: var(--border-bright);
+}
+
+.tui-filter-btn.active {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--bg-row);
+}
+
+.tui-filter-section {
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: var(--space-sm) var(--space);
+  background: var(--bg-pane);
+  border: 1px solid var(--border);
+  color: var(--text);
+  margin-left: var(--space);
+}
+
+.tui-checklist-layout {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
 .tui-checklist-wrap {
   background: var(--bg-pane);
   border: 1px solid var(--border);
-  max-height: calc(100vh - 220px);
+  max-height: calc(100vh - 280px);
   overflow: auto;
 }
 
 .tui-checklist-body {
   max-height: none;
   padding: var(--space-lg);
+  padding-bottom: 60px;
+}
+
+.tui-checklist-nav {
+  position: sticky;
+  top: var(--space-lg);
+  background: var(--bg-pane);
+  border: 1px solid var(--border);
+  padding: var(--space);
+}
+
+.tui-nav-head {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+  margin-bottom: var(--space);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border);
+}
+
+.tui-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tui-nav-link {
+  font-size: 11px;
+  color: var(--text-dim);
+  text-decoration: none;
+  padding: var(--space-sm) 0;
+  display: block;
+}
+
+.tui-nav-link:hover {
+  color: var(--accent);
+}
+
+.tui-nav-count {
+  color: var(--text-muted);
+  margin-left: 4px;
+}
+
+.tui-section-hidden {
+  display: none;
+}
+
+.tui-item-hidden {
+  display: none;
+}
+
+.tui-float-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  background: var(--bg-pane);
+  border-top: 1px solid var(--border);
+  z-index: 10;
+  align-items: center;
+  padding: 0 var(--space-lg);
+}
+
+#view-project-detail.active .tui-float-bar {
+  display: flex;
+}
+
+.tui-float-bar-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0%;
+  background: var(--accent);
+  opacity: 0.25;
+  transition: width 0.2s ease;
+}
+
+.tui-float-bar-text {
+  position: relative;
+  z-index: 1;
+  font-size: 11px;
+  color: var(--text-dim);
 }
 
 /* Section: sticky header + progress */
@@ -427,7 +567,7 @@ body {
 /* Checklist item: TUI checkbox + text + notes */
 .tui-item {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto auto 1fr auto;
   gap: var(--space-lg);
   align-items: start;
   padding: var(--space) 0;
@@ -447,6 +587,11 @@ body {
   color: var(--text-dim);
 }
 
+.tui-item.tui-item-flagged {
+  border-left: 2px solid var(--warn);
+  padding-left: calc(var(--space) - 2px);
+}
+
 .tui-item-check {
   margin-top: 3px;
   width: 16px;
@@ -461,13 +606,40 @@ body {
   outline-offset: 2px;
 }
 
+.tui-item-flag {
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+  color: var(--text-muted);
+  font-size: 14px;
+  cursor: pointer;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.tui-item-flag:hover {
+  color: var(--warn);
+}
+
+.tui-item.tui-item-flagged .tui-item-flag {
+  color: var(--warn);
+}
+
+.tui-item-flag:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
 .tui-item-text {
   flex: 1;
   line-height: 1.4;
 }
 
 .tui-item-notes {
-  grid-column: 2;
+  grid-column: 2 / -1;
   margin-top: var(--space-sm);
 }
 

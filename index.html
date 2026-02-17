@@ -105,8 +105,28 @@
             <button type="button" class="tui-btn tui-btn-pri" id="btn-export-project">Export</button>
           </div>
         </div>
-        <div class="tui-checklist-wrap">
-          <div class="tui-pane-body tui-checklist-body" id="checklist-body"></div>
+        <div class="tui-checklist-filters" id="checklist-filters">
+          <span class="tui-filter-label">Filter:</span>
+          <button type="button" class="tui-filter-btn active" data-filter="all">All</button>
+          <button type="button" class="tui-filter-btn" data-filter="flagged">◇ Flagged</button>
+          <button type="button" class="tui-filter-btn" data-filter="pending">Pending</button>
+          <button type="button" class="tui-filter-btn" data-filter="done">Done</button>
+          <select class="tui-filter-section" id="filter-section" aria-label="Filter by section">
+            <option value="">All sections</option>
+          </select>
+        </div>
+        <div class="tui-checklist-layout">
+          <div class="tui-checklist-wrap">
+            <div class="tui-pane-body tui-checklist-body" id="checklist-body"></div>
+          </div>
+          <aside class="tui-checklist-nav" aria-label="Section navigator">
+            <div class="tui-nav-head">Sections</div>
+            <nav class="tui-nav-list" id="checklist-nav-list"></nav>
+          </aside>
+        </div>
+        <div class="tui-float-bar" id="float-completion-bar" aria-hidden="true">
+          <div class="tui-float-bar-fill" id="float-bar-fill"></div>
+          <span class="tui-float-bar-text" id="float-bar-text">0 / 0 done</span>
         </div>
       </section>
     </main>

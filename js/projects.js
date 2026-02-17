@@ -21,6 +21,7 @@ function createProjectFromTemplate(templateId, templateVersion, templateDefiniti
         status: 'pending',
         notes: '',
         updated_at: null,
+        flagged: false,
       });
     });
   });

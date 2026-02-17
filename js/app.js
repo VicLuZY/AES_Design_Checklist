@@ -22,12 +22,17 @@
     if (viewId === 'dashboard') {
       renderDashboard();
       setStatusLine('Dashboard • [1]–[3] switch view • Click Open on a project');
+      document.getElementById('float-completion-bar').setAttribute('aria-hidden', 'true');
     } else if (viewId === 'templates') {
       renderTemplates();
       setStatusLine('Templates • Click "Start" to create a new checklist project');
+      document.getElementById('float-completion-bar').setAttribute('aria-hidden', 'true');
     } else if (viewId === 'projects') {
       renderProjects();
       setStatusLine('Projects • Import / Export all • Click Open to run checklist');
+      document.getElementById('float-completion-bar').setAttribute('aria-hidden', 'true');
+    } else if (viewId === 'project-detail') {
+      document.getElementById('float-completion-bar').setAttribute('aria-hidden', 'false');
     }
   }
 
@@ -196,11 +201,50 @@
 
   // --- Project detail (checklist) ---
   let currentProjectId = null;
+  let checklistFilter = { status: 'all', sectionId: '' };
+
+  function updateFloatBar(projectId) {
+    const bar = document.getElementById('float-completion-bar');
+    const fill = document.getElementById('float-bar-fill');
+    const text = document.getElementById('float-bar-text');
+    const project = getProjectById(projectId);
+    if (!project || !project.items) return;
+    const total = project.items.length;
+    const done = project.items.filter((i) => i.status === 'done').length;
+    const pct = total ? Math.round((done / total) * 100) : 0;
+    fill.style.width = pct + '%';
+    text.textContent = done + ' / ' + total + ' done';
+  }
+
+  function applyChecklistFilter() {
+    const status = checklistFilter.status;
+    const sectionId = checklistFilter.sectionId;
+    const body = document.getElementById('checklist-body');
+    if (!body) return;
+    body.querySelectorAll('.tui-section').forEach((sec) => {
+      const sid = sec.getAttribute('data-section-id') || '';
+      const sectionMatch = !sectionId || sid === sectionId;
+      let anyVisible = false;
+      sec.querySelectorAll('.tui-item').forEach((row) => {
+        const flagged = row.getAttribute('data-flagged') === 'true';
+        const done = row.querySelector('[data-item-check]').checked;
+        const statusMatch = status === 'all' ||
+          (status === 'flagged' && flagged) ||
+          (status === 'pending' && !done) ||
+          (status === 'done' && done);
+        const show = sectionMatch && statusMatch;
+        row.classList.toggle('tui-item-hidden', !show);
+        if (show) anyVisible = true;
+      });
+      sec.classList.toggle('tui-section-hidden', !sectionMatch || !anyVisible);
+    });
+  }
 
   function openProjectDetail(projectId) {
     const project = getProjectById(projectId);
     if (!project) return;
     currentProjectId = projectId;
+    checklistFilter = { status: 'all', sectionId: '' };
     showView('project-detail');
     document.getElementById('project-detail-title').textContent = (project.template_name || project.template_id) + ' — ' + project.template_version;
 
@@ -227,26 +271,28 @@
     const totalItems = project.items ? project.items.length : 0;
     const doneItems = project.items ? project.items.filter((i) => i.status === 'done').length : 0;
     const progressEl = document.getElementById('checklist-progress');
-    if (progressEl) {
-      progressEl.innerHTML = '<strong>' + doneItems + '/' + totalItems + '</strong> done';
-    }
-    setStatusLine('Checklist • ◀ Back to list • Check items, add notes, Export when done');
+    if (progressEl) progressEl.innerHTML = '<strong>' + doneItems + '/' + totalItems + '</strong> done';
+    setStatusLine('Checklist • Filters: All / Flagged / Pending / Done • Section nav on the right');
+    updateFloatBar(projectId);
+    document.getElementById('float-completion-bar').setAttribute('aria-hidden', 'false');
 
     body.innerHTML = Object.entries(sections).map(([sectionId, items]) => {
       const sectionTitle = (items[0] && items[0].sectionTitle) || sectionId;
       const sectionDone = items.filter((i) => i.status === 'done').length;
       const sectionTotal = items.length;
       return (
-        '<div class="tui-section">' +
+        '<div class="tui-section" id="section-' + escapeHtml(sectionId) + '" data-section-id="' + escapeHtml(sectionId) + '">' +
         '<div class="tui-section-head">' +
         '<span class="tui-section-title">' + escapeHtml(sectionTitle) + '</span>' +
         '<span class="tui-section-progress">' + sectionDone + '/' + sectionTotal + '</span>' +
         '</div>' +
         items.map((item) => {
           const done = item.status === 'done';
+          const flagged = !!item.flagged;
           return (
-            '<div class="tui-item' + (done ? ' tui-item-done' : '') + '" data-item-id="' + escapeHtml(item.id) + '">' +
+            '<div class="tui-item' + (done ? ' tui-item-done' : '') + (flagged ? ' tui-item-flagged' : '') + '" data-item-id="' + escapeHtml(item.id) + '" data-flagged="' + (flagged ? 'true' : 'false') + '" data-status="' + (done ? 'done' : 'pending') + '">' +
             '<input type="checkbox" class="tui-item-check" ' + (done ? 'checked' : '') + ' data-item-check />' +
+            '<button type="button" class="tui-item-flag" data-item-flag title="Flag" aria-label="Toggle flag">' + (flagged ? '★' : '☆') + '</button>' +
             '<div class="tui-item-text">' + escapeHtml(item.text) + '</div>' +
             '<div class="tui-item-time">' + (item.updated_at ? formatDate(item.updated_at) : '') + '</div>' +
             '<div class="tui-item-notes"><textarea placeholder="Notes" data-item-notes>' + escapeHtml(item.notes || '') + '</textarea></div>' +
@@ -257,25 +303,81 @@
       );
     }).join('');
 
+    const navList = document.getElementById('checklist-nav-list');
+    navList.innerHTML = Object.entries(sections).map(([sectionId, items]) => {
+      const sectionTitle = (items[0] && items[0].sectionTitle) || sectionId;
+      const sectionDone = items.filter((i) => i.status === 'done').length;
+      const sectionTotal = items.length;
+      return '<a class="tui-nav-link" href="#section-' + escapeHtml(sectionId) + '">' + escapeHtml(sectionTitle) + ' <span class="tui-nav-count">' + sectionDone + '/' + sectionTotal + '</span></a>';
+    }).join('');
+
+    const sectionSelect = document.getElementById('filter-section');
+    sectionSelect.innerHTML = '<option value="">All sections</option>' + Object.entries(sections).map(([sectionId, items]) => {
+      const sectionTitle = (items[0] && items[0].sectionTitle) || sectionId;
+      return '<option value="' + escapeHtml(sectionId) + '">' + escapeHtml(sectionTitle) + '</option>';
+    }).join('');
+
+    navList.querySelectorAll('.tui-nav-link').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    document.querySelectorAll('#checklist-filters .tui-filter-btn').forEach((btn) => {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('#checklist-filters .tui-filter-btn').forEach((b) => b.classList.remove('active'));
+        this.classList.add('active');
+        checklistFilter.status = this.getAttribute('data-filter');
+        applyChecklistFilter();
+      });
+    });
+    sectionSelect.addEventListener('change', function () {
+      checklistFilter.sectionId = this.value || '';
+      applyChecklistFilter();
+    });
+
     body.querySelectorAll('[data-item-check]').forEach((cb) => {
       cb.addEventListener('change', function () {
         const item = this.closest('.tui-item');
         const itemId = item.getAttribute('data-item-id');
         updateProjectItem(projectId, itemId, { status: this.checked ? 'done' : 'pending' });
         item.classList.toggle('tui-item-done', this.checked);
+        item.setAttribute('data-status', this.checked ? 'done' : 'pending');
         const p = getProjectById(projectId);
         const total = p.items ? p.items.length : 0;
         const done = p.items ? p.items.filter((i) => i.status === 'done').length : 0;
-        const head = item.closest('.tui-section').querySelector('.tui-section-progress');
+        const head = item.closest('.tui-section');
         if (head) {
-          const secItems = item.closest('.tui-section').querySelectorAll('.tui-item');
+          const secItems = head.querySelectorAll('.tui-item');
           const secDone = Array.from(secItems).filter((row) => row.querySelector('[data-item-check]').checked).length;
-          head.textContent = secDone + '/' + secItems.length;
+          const prog = head.querySelector('.tui-section-progress');
+          if (prog) prog.textContent = secDone + '/' + secItems.length;
         }
         const progressEl = document.getElementById('checklist-progress');
         if (progressEl) progressEl.innerHTML = '<strong>' + done + '/' + total + '</strong> done';
+        updateFloatBar(projectId);
+        applyChecklistFilter();
       });
     });
+
+    body.querySelectorAll('[data-item-flag]').forEach((btn) => {
+      btn.addEventListener('click', function () {
+        const item = this.closest('.tui-item');
+        const itemId = item.getAttribute('data-item-id');
+        const project = getProjectById(projectId);
+        const it = project.items.find((i) => i.id === itemId);
+        const next = !it.flagged;
+        updateProjectItem(projectId, itemId, { flagged: next });
+        item.classList.toggle('tui-item-flagged', next);
+        item.setAttribute('data-flagged', next ? 'true' : 'false');
+        this.textContent = next ? '★' : '☆';
+        applyChecklistFilter();
+      });
+    });
+
     body.querySelectorAll('[data-item-notes]').forEach((ta) => {
       ta.addEventListener('blur', function () {
         const item = this.closest('.tui-item');
